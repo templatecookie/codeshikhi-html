@@ -124,6 +124,18 @@ footer {
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
 /* === For Large Device ( 1024px - 1200px) == */
+.btn.btn-primary {
+  padding: 10px 25px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #377dff;
+}
+
+.btn.btn-primary:hover {
+  box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+  background-color: #0052ea;
+}
+
 .navbar {
   padding: 25px 0;
 }
