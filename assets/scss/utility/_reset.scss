@@ -1,44 +1,52 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 ul,
 ol,
 dl {
-  list-style: none;
-  margin: 0;
+    list-style: none;
+    margin: 0;
 }
 
 a {
-  text-decoration: none;
-  &:hover {
-    @extend a;
-  }
-  &:active {
-    @extend a;
-  }
-  &:focus {
-    @extend a;
-  }
+    text-decoration: none;
+
+    &:hover {
+        @extend a;
+    }
+
+    &:active {
+        @extend a;
+    }
+
+    &:focus {
+        @extend a;
+    }
 }
+
 button,
 .btn,
 input {
-  border: none;
-  outline: none;
-  box-shadow: none;
-  &:hover {
-    @extend button;
-  }
-  &:active {
-    @extend button;
-  }
-  &:focus {
-    @extend button;
-  }
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+    &:hover {
+        @extend button;
+    }
+
+    &:active {
+        @extend button;
+    }
+
+    &:focus {
+        @extend button;
+    }
 }
+
 article,
 aside,
 details,
@@ -50,7 +58,7 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
 
 /**
@@ -59,9 +67,12 @@ section {
  */
 
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
 }
 
 /*
@@ -70,13 +81,17 @@ abbr[title] {
  */
 
 ::-moz-selection {
-  background-color: #b3d4fc; /* 1 */
-  color: #000000; /* 1 */
-  text-shadow: none;
+    background-color: #b3d4fc;
+    /* 1 */
+    color: #000000;
+    /* 1 */
+    text-shadow: none;
 }
 
 ::selection {
-  background-color: #b3d4fc; /* 1 */
-  color: #000000; /* 1 */
-  text-shadow: none;
+    background-color: #b3d4fc;
+    /* 1 */
+    color: #000000;
+    /* 1 */
+    text-shadow: none;
 }
