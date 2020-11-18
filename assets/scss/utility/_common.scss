@@ -5,9 +5,11 @@ body {
 }
 
 // custom container
-.container {
-  max-width: 1440px;
-  margin: auto;
+.concustom__container {
+  @media (min-width: 1200px) {
+    max-width: 1440px;
+    margin: auto;
+  }
 }
 // section
 section,
@@ -37,14 +39,14 @@ footer {
   }
 }
 
-.shiky-btn{
+.shiky-btn {
   padding: 10px 25px;
   font-weight: 600;
   color: #fff;
   background-color: #377dff;
-  
-  &:hover{
-      box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
-      background-color: #0052ea;
+
+  &:hover {
+    box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+    background-color: #0052ea;
   }
 }

@@ -83,14 +83,14 @@
   &__four {
     border-top: 2px solid #fff;
   }
-  &__copyright {
-  }
   &_text {
     font-weight: 600;
     color: #fff;
-    .bold {
-      font-weight: 800;
-      color: color(secondary);
+
+    .block {
+      color: #fff !important;
+      padding: 6px;
+      background-color: color(secondary);
     }
   }
 }
