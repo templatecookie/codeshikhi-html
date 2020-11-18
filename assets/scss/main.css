@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+ol,
+dl {
+  list-style: none;
+  margin: 0;
+}
+
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+button, button:hover,
+.btn:hover,
+input:hover, button:active,
+.btn:active,
+input:active, button:focus,
+.btn:focus,
+input:focus,
+.btn,
+input {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/*
+ * Remove the text shadow on text selections (opinionated).
+ * 1. Restore the coloring undone by defining the text shadow (opinionated).
+ */
+::-moz-selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000000;
+  /* 1 */
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000000;
+  /* 1 */
+  text-shadow: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #252933;
+}
+
+section {
+  padding: 90px 0px;
+}
+
+@media (min-width: 1200px) {
+  .custom__container {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+
+section,
+footer {
+  padding: 90px 0px;
+}
+
+.section__info {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section_title {
+  font-size: 58px;
+  line-height: 68px;
+  font-weight: 700;
+  color: #377dff;
+}
+
+.section_brief {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+
+.btn-primary {
+  background-color: #377dff !important;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+          box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+  background-color: #0052ea;
+}
+
+/* ====  Responsive Css will be go here ==== */
+/* === For Small Device ( 0px - 767px) == */
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
+.btn.btn-primary {
+  padding: 10px 25px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #377dff;
+}
+
+.btn.btn-primary:hover {
+  -webkit-box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+          box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+  background-color: #0052ea;
+}
+
+.navbar {
+  padding: 25px 0;
+}
+
+.navbar-brand img {
+  width: 200px;
+}
+
+.nav-item .active {
+  color: #377dff !important;
+}
+
+.nav-link {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  font-size: 16px;
+  color: #677788 !important;
+  font-weight: 600;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav-link:hover {
+  color: #377dff !important;
+}
+
+.nav li {
+  margin-left: 15px;
+}
+
+/* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
+  .nav li {
+    padding: 8px 0;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
+.banner__content {
+  max-width: 450px;
+}
+
+.banner__heading {
+  font-weight: 600;
+  line-height: 1.4;
+  color: #252933;
+}
+
+.banner__pra {
+  font-size: 16px;
+  color: #677788;
+  line-height: 1.6;
+}
+
+.banner__button .btn-wide {
+  min-width: 10rem;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.banner__button .btn-link {
+  font-weight: 600;
+  color: #377dff;
+}
+
+.banner__button .btn-link:hover {
+  color: #0052ea;
+  text-decoration: none;
+}
+
+.banner__small {
+  color: #677788;
+  font-size: 14px;
+}
+
+.bootcamp__top {
+  text-align: center;
+}
+
+.bootcamp_course-title {
+  text-align: left;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.bootcamp__begin-date-info h2 {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+
+.bootcamp__begin-date-info h2 .time {
+  background-color: #377dff;
+  color: #fff;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.bootcamp__begin-date-info h2 .bootcamp_begin {
+  background-color: #f39233;
+  color: #fff;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.bootcamp__bottom {
+  border-top: 2px solid #377dff;
+  padding-top: 16px;
+}
+
+.bootcamp_explore {
+  background-color: #377dff !important;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-weight: 600;
+  border-radius: 0px !important;
+}
+
+.bootcamp_explore:hover {
+  background-color: #252933 !important;
+}
+
+@media (max-width: 1024px) {
+  .bootcamp__packages {
+    margin-bottom: 30px !important;
+  }
+}
+
+/* === For Small Device ( 0px - 767px) == */
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
+.trainer-title {
+  margin-bottom: 60px;
+}
+
+.trainer-title h6 {
+  color: #5B6D7C;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.trainer-title h4 {
+  color: #252933;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.trainer-area {
+  max-width: 450px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.trainer-area__image {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.trainer-area__image img {
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
+.trainer-area__info {
+  padding: 20px 0px;
+  border-radius: 5px;
+  position: relative;
+  margin: -50px 20px 0px;
+  z-index: 1;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 10px 10px rgba(195, 195, 195, 0.2);
+          box-shadow: 0px 10px 10px rgba(195, 195, 195, 0.2);
+}
+
+.trainer-area__info h5 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #252933;
+}
+
+.trainer-area__info p {
+  font-size: 16px;
+  color: #252933;
+  margin-bottom: 0 !important;
+}
+
+.trainer-area:hover .trainer-area__image img {
+  -webkit-transform: rotate(5deg) scale(1.1);
+          transform: rotate(5deg) scale(1.1);
+}
+
+/* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .trainer-area {
+    margin-bottom: 30px;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
+.call-to-action {
+  padding: 35px 0px 35px 25px;
+  background-color: #377dff;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.call-to-action__title {
+  color: #fff;
+}
+
+.call-to-action__title h4 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.call-to-action__text {
+  margin: 15px 0px 18px;
+  color: #fff;
+  max-width: 300px;
+}
+
+.call-to-action__text p {
+  font-size: 16px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .call-to-action__title h4 {
+    font-weight: 700;
+    font-size: 26px;
+  }
+}
+
+.footer {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 0px;
+  background-color: #377dff;
+  color: white;
+  text-align: center;
+}
+
+.footer .footer__row {
+  padding: 16px 0px;
+}
+
+.footer__items {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__item {
+  margin: 0px 12px;
+}
+
+.footer_link {
+  color: #fff;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.footer_link:hover {
+  color: #252933;
+  text-decoration: underline;
+}
+
+.footer__logo {
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
+.footer__logo span {
+  font-size: 48px;
+  line-height: 58px;
+  font-family: 'Baloo Da 2', cursive;
+  font-weight: 700;
+}
+
+.footer__logo span .bold {
+  font-weight: 800;
+  color: #252933;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__social li {
+  margin: 0px 12px;
+}
+
+.footer__social li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #252933;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.footer__social li a i {
+  color: #fff;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.footer__social li a:hover {
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(19, 18, 18, 0.479);
+          box-shadow: 0px 4px 15px 0px rgba(19, 18, 18, 0.479);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.footer__four {
+  border-top: 2px solid #fff;
+}
+
+.footer_text {
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer_text .block {
+  color: #fff !important;
+  padding: 6px;
+  background-color: #252933;
+}
+/*# sourceMappingURL=main.css.map */
