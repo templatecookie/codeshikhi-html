@@ -1,6 +1,9 @@
 .call-to-action{
-  padding:30px;
+  padding: 35px 0px 35px 25px;
   background-color: color(primary) ;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 5px;
   margin-bottom: 30px;
   &__title{
@@ -11,11 +14,11 @@
     }
   }
   &__text{
-    margin: 25px 0px;
+    margin: 15px 0px 18px;
     color: #fff;
+    max-width: 300px;
     p{
-      font-size: 14px;
-      color: color(secondary);
+      font-size: 16px;
     }
   }
 }
