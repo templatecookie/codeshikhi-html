@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -27,7 +28,8 @@ input:focus,
 input {
   border: none;
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 article,
@@ -53,7 +55,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -61,6 +64,13 @@ abbr[title] {
  * Remove the text shadow on text selections (opinionated).
  * 1. Restore the coloring undone by defining the text shadow (opinionated).
  */
+::-moz-selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000000;
+  /* 1 */
+  text-shadow: none;
+}
 
 ::selection {
   background-color: #b3d4fc;
@@ -111,15 +121,16 @@ footer {
   white-space: pre-wrap;
 }
 
-.shiky-btn {
+.btn {
   padding: 10px 25px;
   font-weight: 600;
   color: #fff;
   background-color: #377dff;
 }
 
-.shiky-btn:hover {
-  box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+.btn:hover {
+  -webkit-box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+          box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
   background-color: #0052ea;
 }
 
@@ -136,7 +147,8 @@ footer {
 }
 
 .btn.btn-primary:hover {
-  box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+  -webkit-box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+          box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
   background-color: #0052ea;
 }
 
@@ -156,8 +168,9 @@ footer {
   padding-right: 15px !important;
   padding-left: 15px !important;
   font-size: 16px;
-  color: #252933 !important;
+  color: #677788 !important;
   font-weight: 600;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -258,6 +271,7 @@ footer {
 
 .bootcamp_explore {
   background-color: #377dff !important;
+  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   font-weight: 600;
   border-radius: 0px !important;
@@ -286,6 +300,7 @@ footer {
 .trainer-area__image {
   border-radius: 5px;
   overflow: hidden;
+  -webkit-transition: 0.3s all linear;
   transition: 0.3s all linear;
 }
 
@@ -311,7 +326,8 @@ footer {
 }
 
 .trainer-area:hover .trainer-area__image {
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 /* === For Small Device ( 0px - 767px) == */
@@ -371,7 +387,9 @@ footer {
 }
 
 .footer__items {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__item {
@@ -384,6 +402,7 @@ footer {
   line-height: 38px;
   font-weight: 700;
   text-transform: uppercase;
+  -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
 
@@ -410,8 +429,12 @@ footer {
 }
 
 .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__social li {
@@ -419,13 +442,20 @@ footer {
 }
 
 .footer__social li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 38px;
   height: 38px;
   border-radius: 50%;
   background-color: #252933;
+  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -438,8 +468,10 @@ footer {
 }
 
 .footer__social li a:hover {
-  box-shadow: 0px 4px 15px 0px rgba(19, 18, 18, 0.479);
-  transform: scale(0.9);
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(19, 18, 18, 0.479);
+          box-shadow: 0px 4px 15px 0px rgba(19, 18, 18, 0.479);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .footer__four {
