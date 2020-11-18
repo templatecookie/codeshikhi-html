@@ -163,6 +163,20 @@ footer {
   margin-left: 15px;
 }
 
+/* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
+  .nav li {
+    padding: 8px 0;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
 .banner__heading {
   font-weight: 600;
   line-height: 1.4;
