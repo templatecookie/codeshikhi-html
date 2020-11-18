@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -27,7 +28,8 @@ input:focus,
 input {
   border: none;
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 article,
@@ -53,7 +55,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -61,6 +64,13 @@ abbr[title] {
  * Remove the text shadow on text selections (opinionated).
  * 1. Restore the coloring undone by defining the text shadow (opinionated).
  */
+::-moz-selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000000;
+  /* 1 */
+  text-shadow: none;
+}
 
 ::selection {
   background-color: #b3d4fc;
@@ -73,13 +83,26 @@ abbr[title] {
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  color: color(secondary);
+  color: #252933;
 }
 
-.custom__container {
+.container {
   max-width: 1440px;
   margin: auto;
   color: #377dff;
+}
+
+.shiky-btn {
+  padding: 10px 25px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #377dff;
+}
+
+.shiky-btn:hover {
+  -webkit-box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+          box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+  background-color: #0052ea;
 }
 
 /* ====  Responsive Css will be go here ==== */
@@ -87,4 +110,68 @@ body {
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
 /* === For Large Device ( 1024px - 1200px) == */
+.navbar {
+  padding: 25px 0;
+}
+
+.navbar-brand img {
+  width: 200px;
+}
+
+.nav-item .active {
+  color: #377dff !important;
+}
+
+.nav-link {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  font-size: 16px;
+  color: #252933 !important;
+  font-weight: 600;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav-link:hover {
+  color: #377dff !important;
+}
+
+.nav li {
+  margin-left: 15px;
+}
+
+.banner__heading {
+  font-weight: 600;
+  line-height: 1.4;
+  color: #252933;
+  padding-right: 30%;
+}
+
+.banner__pra {
+  font-size: 16px;
+  color: #677788;
+  line-height: 1.6;
+  padding-right: 35%;
+}
+
+.banner__button .btn-wide {
+  min-width: 10rem;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.banner__button .btn-link {
+  font-weight: 600;
+  color: #377dff;
+}
+
+.banner__button .btn-link:hover {
+  color: #0052ea;
+  text-decoration: none;
+}
+
+.banner__small {
+  color: #677788;
+  font-size: 14px;
+}
 /*# sourceMappingURL=main.css.map */

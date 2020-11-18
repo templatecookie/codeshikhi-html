@@ -1,0 +1,29 @@
+.navbar{
+    padding: 25px 0;
+    &-brand{
+        img{
+            width: 200px;
+        }
+    }
+}
+.nav{
+    &-item{
+        .active{
+            color: color(primary) !important;
+        }
+    }
+    &-link{
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+        font-size: 16px;
+        color: color(secondary) !important;
+        font-weight: 600;
+        transition: .3s;
+        &:hover{
+            color: color(primary) !important;
+        }
+    }
+    li{
+        margin-left: 15px;
+    }
+}
