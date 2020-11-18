@@ -183,18 +183,20 @@ footer {
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
 /* === For Large Device ( 1024px - 1200px) == */
+.banner__content {
+  max-width: 450px;
+}
+
 .banner__heading {
   font-weight: 600;
   line-height: 1.4;
   color: #252933;
-  padding-right: 30%;
 }
 
 .banner__pra {
   font-size: 16px;
   color: #677788;
   line-height: 1.6;
-  padding-right: 35%;
 }
 
 .banner__button .btn-wide {

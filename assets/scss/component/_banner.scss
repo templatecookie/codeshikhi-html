@@ -1,15 +1,16 @@
 .banner{
+    &__content{
+        max-width: 450px;
+    }
     &__heading{
         font-weight: 600;
         line-height: 1.4;
         color: color(secondary);
-        padding-right: 30%;
     }
     &__pra{
         font-size: 16px;
         color: #677788;
         line-height: 1.6;
-        padding-right: 35%;
     }
     &__button{
         .btn-wide {
