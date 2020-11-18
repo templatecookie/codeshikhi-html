@@ -4,9 +4,16 @@ body {
   color: color(secondary);
 }
 
+// custom Padding
+section{
+  padding: 90px 0px; 
+}
+
 // custom container
 .custom__container {
-  max-width: 1440px;
-  margin: auto;
-  color: #377dff;
+  @media(min-width: 1200px) {
+    max-width: 1440px;
+    margin: auto;
+  }
 }
+

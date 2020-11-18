@@ -73,13 +73,18 @@ abbr[title] {
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  color: color(secondary);
+  color: #252933;
 }
 
-.custom__container {
-  max-width: 1440px;
-  margin: auto;
-  color: #377dff;
+section {
+  padding: 90px 0px;
+}
+
+@media (min-width: 1200px) {
+  .custom__container {
+    max-width: 1440px;
+    margin: auto;
+  }
 }
 
 /* ====  Responsive Css will be go here ==== */
@@ -87,4 +92,83 @@ body {
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
 /* === For Large Device ( 1024px - 1200px) == */
+.trainer-area {
+  margin-bottom: 30px;
+  max-width: 450px;
+  margin: auto;
+}
+
+.trainer-area__image {
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.3s all linear;
+}
+
+.trainer-area__info {
+  padding: 20px 0px;
+  border-radius: 5px;
+  position: relative;
+  margin: -50px 20px 0px;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.trainer-area__info h5 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #252933;
+}
+
+.trainer-area__info p {
+  font-size: 16px;
+  color: #252933;
+  margin-bottom: 0 !important;
+}
+
+.trainer-area:hover .trainer-area__image {
+  transform: scale(0.9);
+}
+
+/* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .trainer-area {
+    margin-bottom: 30px;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
+.call-to-action {
+  padding: 30px;
+  background-color: #377dff;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.call-to-action__title {
+  color: #fff;
+}
+
+.call-to-action__title h4 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.call-to-action__text {
+  margin: 25px 0px;
+  color: #fff;
+}
+
+.call-to-action__text p {
+  font-size: 14px;
+  color: #252933;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .call-to-action__title h4 {
+    font-weight: 700;
+    font-size: 26px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,75 @@
+.call-to-action{
+  padding:30px;
+  background-color: color(primary) ;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  &__title{
+    color: #fff;
+    h4{
+      font-weight: 700;
+      font-size: 28px;
+    }
+  }
+  &__text{
+    margin: 25px 0px;
+    color: #fff;
+    p{
+      font-size: 14px;
+      color: color(secondary);
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .call-to-action__title h4 {
+    font-weight: 700;
+    font-size: 26px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Responsive
+// Responsive function
+@mixin ex_small {
+    @media (min-width: 320px) and(max-width: 575px) {
+      @content;
+    }
+  }
+  
+  @mixin small {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @mixin medium {
+    @media (min-width: 768px) and (max-width: 1023px) {
+      @content;
+    }
+  }
+  @mixin large {
+    @media (min-width: 1024px) and (max-width: 1200px) {
+      @content;
+    }
+  }

@@ -1,0 +1,88 @@
+.trainer-area{
+  margin-bottom: 30px;
+  max-width: 450px;
+  margin: auto;
+
+  &__image{
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s all linear;
+  }
+  &__info{
+    padding: 20px 0px;
+    border-radius: 5px;
+    position: relative;
+    margin: -50px 20px 0px;
+    z-index: 1;
+    background-color: #ffffff;
+    h5{
+      font-size: 20px;
+      font-weight: 900;
+      color: color(secondary);
+    }
+    p{
+      font-size: 16px;
+      color: color(secondary);
+      margin-bottom: 0 !important;
+    }
+  }
+  &:hover .trainer-area__image{
+    transform: scale(0.9);
+  }
+}
+
+
+// responsive
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+  .trainer-area {
+    margin-bottom: 30px;
+  }
+}
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+}
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Responsive
+// Responsive function
+@mixin ex_small {
+    @media (min-width: 320px) and(max-width: 575px) {
+      @content;
+    }
+  }
+  
+  @mixin small {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @mixin medium {
+    @media (min-width: 768px) and (max-width: 1023px) {
+      @content;
+    }
+  }
+  @mixin large {
+    @media (min-width: 1024px) and (max-width: 1200px) {
+      @content;
+    }
+  }
