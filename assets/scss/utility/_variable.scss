@@ -3,6 +3,7 @@ $colors: (
   primary: #377dff,
   secondary: #252933,
 );
+
 @function color($color-name) {
   @return map-get($map: $colors, $key: $color-name);
 }
