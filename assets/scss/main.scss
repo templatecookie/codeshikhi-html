@@ -1,0 +1,19 @@
+// Include fonts
+// font ballo da-2 & open sans
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap');
+
+// config
+@import './utility/reset';
+@import './utility/common';
+
+// Responsive Device function
+@import './responsive/responsive';
+
+// component
+@import './component/header';
+@import './component/banner';
+@import './component/bootcam';
+@import './component/trainer';
+@import './component/callaction';
+@import './component/footer';
