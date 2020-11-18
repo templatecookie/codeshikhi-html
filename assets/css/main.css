@@ -121,11 +121,14 @@ footer {
   white-space: pre-wrap;
 }
 
+.btn-primary {
+  background-color: #377dff !important;
+}
+
 .btn {
   padding: 10px 25px;
   font-weight: 600;
   color: #fff;
-  background-color: #377dff;
 }
 
 .btn:hover {
