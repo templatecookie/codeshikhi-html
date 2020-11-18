@@ -8,7 +8,33 @@ body {
 .container {
   max-width: 1440px;
   margin: auto;
-  color: #377dff;
+}
+// section
+section,
+footer {
+  padding: 90px 0px;
+}
+
+// button
+
+// section
+.section {
+  &__info {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &_title {
+    font-size: 58px;
+    line-height: 68px;
+    font-weight: 700;
+    color: color(primary);
+  }
+  &_brief {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 600;
+    white-space: pre-wrap;
+  }
 }
 
 .shiky-btn{
