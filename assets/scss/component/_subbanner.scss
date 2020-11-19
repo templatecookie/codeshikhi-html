@@ -1,0 +1,73 @@
+.subbanner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    padding: 64px 0;
+
+    &::before {
+        background: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        content: "";
+        opacity: 0.9;
+    }
+
+    .btn-pill {
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    .btn-success {
+        color: #fff;
+        background-color: #00c9a7;
+        border-color: #00c9a7;
+
+        &:hover {
+            background-color: #00c9a7;
+            border-color: #00c9a7;
+        }
+    }
+
+    &__header {
+        font-weight: 600;
+        color: color(secondary);
+        line-height: 1.2;
+    }
+
+    &__pra {
+        color: #677788;
+        line-height: 1.6;
+    }
+
+    .avatar {
+        img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    &__wonner {
+        color: #677788;
+    }
+
+    .link-underline {
+        color: #677788;
+        transition: .3s !important;
+
+        &:hover {
+            color: #0052ea;
+            border-bottom: 1px dotted #0052ea;
+        }
+    }
+}

@@ -392,6 +392,80 @@ footer {
   }
 }
 
+.subbanner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+  padding: 64px 0;
+}
+
+.subbanner::before {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.9;
+}
+
+.subbanner .btn-pill {
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.subbanner .btn-success {
+  color: #fff;
+  background-color: #00c9a7;
+  border-color: #00c9a7;
+}
+
+.subbanner .btn-success:hover {
+  background-color: #00c9a7;
+  border-color: #00c9a7;
+}
+
+.subbanner__header {
+  font-weight: 600;
+  color: #252933;
+  line-height: 1.2;
+}
+
+.subbanner__pra {
+  color: #677788;
+  line-height: 1.6;
+}
+
+.subbanner .avatar img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.subbanner__wonner {
+  color: #677788;
+}
+
+.subbanner .link-underline {
+  color: #677788;
+  -webkit-transition: .3s !important;
+  transition: .3s !important;
+}
+
+.subbanner .link-underline:hover {
+  color: #0052ea;
+  border-bottom: 1px dotted #0052ea;
+}
+
 .footer {
   position: relative;
   padding-top: 60px;
