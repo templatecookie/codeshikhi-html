@@ -1,0 +1,59 @@
+.w-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.features {
+    &__section {
+        span {
+            font-size: 14px;
+            color: #676767;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-weight: 700;
+            line-height: 1.4;
+            color: color(secondary);
+        }
+    }
+    &__media{
+        display: flex;
+        align-items: center;
+        span{
+            font-size: 14px;
+            width: 30px;
+            height: 30px;
+            color: #377dff;
+            background: rgba(55, 125, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+        }
+        div{
+            color: color(secondary);
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.6;
+            margin-left: 18px;
+        }
+        .link{
+            color: #377dff;
+            cursor: pointer;
+            &:hover{
+                color: #4e7fdb;
+            }
+        }
+    }
+}
+.card{
+    border-width: 0;
+    box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
+    .card-body{
+        .card-image{
+            img{
+                width: 40px;
+            }
+        }
+    }
+}

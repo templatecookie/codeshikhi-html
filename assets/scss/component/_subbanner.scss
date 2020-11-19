@@ -21,9 +21,9 @@
     }
 
     .btn-pill {
-        padding: 5px 15px;
+        padding: 5px 14px;
         border-radius: 20px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .btn-success {
@@ -38,7 +38,7 @@
     }
 
     &__header {
-        font-weight: 600;
+        font-weight: 700;
         color: color(secondary);
         line-height: 1.2;
     }
@@ -46,6 +46,7 @@
     &__pra {
         color: #677788;
         line-height: 1.6;
+        max-width: 750px;
     }
 
     .avatar {
@@ -64,10 +65,12 @@
     .link-underline {
         color: #677788;
         transition: .3s !important;
+        font-weight: 600;
+        border-bottom: 1px dotted #677788;
 
         &:hover {
             color: #0052ea;
-            border-bottom: 1px dotted #0052ea;
+            border-color:#0052ea;
         }
     }
 }
