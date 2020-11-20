@@ -74,3 +74,19 @@
         }
     }
 }
+
+
+
+/* ====  Responsive Css will be go here ==== */
+
+/* === For Small Device ( 0px - 767px) == */
+@include small {}
+
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {}
+
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {}
+
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {}

@@ -8,8 +8,8 @@
 @import './utility/variable';
 @import './utility/common';
 
-// Responsive Device function
-@import './responsive/responsive';
+// responsive - function
+@import './function/function';
 
 // component
 @import './component/button';
@@ -18,11 +18,16 @@
 @import './component/bootcam';
 @import './component/trainer';
 @import './component/callaction';
+@import './component/project';
+@import './component/how-we';
+@import './component/syllabus';
+@import './component/footer';
 
 //crourse page css
 @import './component/subbanner';
 @import './component/features';
 
-
 //footer
-@import './component/footer';
+
+// Responsive Device function
+@import './responsive/responsive';

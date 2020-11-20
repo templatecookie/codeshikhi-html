@@ -1,0 +1,56 @@
+.syllabus {
+  #accordion {
+    .card {
+      max-width: 750px;
+      margin: auto;
+      &-header {
+        .btn {
+          display: flex;
+          justify-content: space-between;
+          color: color(secondary);
+          &:hover {
+            text-decoration: none;
+          }
+          &.collapsed {
+            i {
+              transform: rotate(-90deg);
+            }
+          }
+          i {
+            transform: rotate(90deg);
+            transition: all 0.3s linear;
+            margin-right: 15px;
+          }
+
+          // left -title
+          .left {
+            font-size: 18px;
+            line-height: 28px;
+          }
+          .right {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            .dot {
+            }
+          }
+        }
+      }
+      //card-body{
+      &-body {
+        padding: 1.25rem 35px;
+        margin: 0px 25px;
+      }
+      // course
+      &__course-syllabus-item {
+        display: flex;
+        justify-content: space-between;
+        margin: 16px 0px;
+      }
+      &__preview {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}
