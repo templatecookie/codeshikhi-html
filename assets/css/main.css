@@ -738,6 +738,12 @@ footer {
   margin: 0 auto;
 }
 
+.features__section {
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
 .features__section span {
   font-size: 14px;
   color: #676767;
@@ -757,6 +763,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 32px;
 }
 
 .features__media span {
@@ -787,23 +794,178 @@ footer {
   color: #4e7fdb;
 }
 
+.padding {
+  padding: 0 110px;
+}
+
 .card {
-  border-width: 0;
+  max-width: 81%;
+  border: 0;
   -webkit-box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
           box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
+}
+
+.card .card-body {
+  padding: 24px;
 }
 
 .card .card-body .card-image img {
   width: 40px;
 }
 
+.card .card-body h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.card .card-body p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #677788;
+  line-height: 1.6;
+  max-width: 99%;
+}
+
+.dot-shape img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  width: 57%;
+}
+
+/* ====  Responsive Css will be go here ==== */
+/* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .subbanner__header {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .subbanner__pra {
+    font-size: 14px;
+  }
+  .padding {
+    padding: 0;
+  }
+  .features__section {
+    max-width: 100%;
+  }
+  .features__section {
+    margin-bottom: 40px;
+  }
+  .features__section h2 {
+    font-size: 28px;
+  }
+  .card {
+    max-width: 100%;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+@media (min-width: 320px) and (max-width: 575px) {
+  .padding {
+    padding: 0;
+  }
+  .features__section {
+    max-width: 100%;
+  }
+}
+
+/* === For Medium Device ( 768px - 1023px) == */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .padding {
+    padding: 0;
+  }
+  .features__section {
+    max-width: 100%;
+  }
+}
+
+/* === For Large Device ( 1024px - 1200px) == */
+.platform {
+  margin: auto;
+}
+
+.platform__broder {
+  border-bottom: 5px solid #1724b5;
+  padding-bottom: 20px;
+}
+
+.platform__heading-text {
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.platform__heading-text p {
+  font-size: 18px;
+  color: #252933;
+  font-weight: 600;
+}
+
+.platform__title span {
+  font-size: 14px;
+  color: #1724b5;
+  letter-spacing: 2px;
+}
+
+.platform__title h3 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #252933;
+}
+
+.platform__logo {
+  text-align: center;
+}
+
+.platform__logo img {
+  width: 55px;
+}
+
+.platform__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.platform__logo {
+  width: 30%;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.platform__logo-three, .platform__logo-six, .platform__logo-nine {
+  border-right: 0;
+}
+
+.platform__logo-seven, .platform__logo-eight, .platform__logo-nine {
+  border-bottom: 0;
+}
+
 /* ====  Responsive Css will be go here ==== */
 /* === For Small Device ( 0px - 767px) == */
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
 /* === For Large Device ( 1024px - 1200px) == */
-/* ====  Responsive Css will be go here ==== */
-/* === For Small Device ( 0px - 767px) == */
-/* === For Extra small Device ( 320px - 575px) == */
-/* === For Medium Device ( 768px - 1023px) == */
-/* === For Large Device ( 1024px - 1200px) == */
+/*# sourceMappingURL=main.css.map */
