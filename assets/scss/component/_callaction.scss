@@ -27,35 +27,28 @@
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-    .call-to-action__title h4 {
-        font-weight: 700;
-        font-size: 26px;
-    }
+
+
+
+
+
+
+// @media (min-width: 992px) and (max-width: 1199px) {
+//     .call-to-action__title h4 {
+//         font-weight: 700;
+//         font-size: 26px;
+//     }
+// }
+
+
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
 }
 
-// Responsive
-// Responsive function
-@mixin ex_small {
-    @media (min-width: 320px) and(max-width: 575px) {
-        @content;
-    }
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
 }
 
-@mixin small {
-    @media (max-width: 767px) {
-        @content;
-    }
-}
-
-@mixin medium {
-    @media (min-width: 768px) and (max-width: 1023px) {
-        @content;
-    }
-}
-
-@mixin large {
-    @media (min-width: 1024px) and (max-width: 1200px) {
-        @content;
-    }
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
 }

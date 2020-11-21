@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -28,8 +27,7 @@ input:focus,
 input {
   border: none;
   outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 article,
@@ -55,8 +53,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -64,13 +61,6 @@ abbr[title] {
  * Remove the text shadow on text selections (opinionated).
  * 1. Restore the coloring undone by defining the text shadow (opinionated).
  */
-::-moz-selection {
-  background-color: #b3d4fc;
-  /* 1 */
-  color: #000000;
-  /* 1 */
-  text-shadow: none;
-}
 
 ::selection {
   background-color: #b3d4fc;
@@ -110,8 +100,7 @@ footer {
 }
 
 .btn-primary:hover {
-  -webkit-box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
-          box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+  box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
   background-color: #0052ea;
 }
 
@@ -138,7 +127,6 @@ footer {
   font-size: 16px;
   color: #677788 !important;
   font-weight: 600;
-  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -258,7 +246,6 @@ footer {
 
 .bootcamp_explore {
   background-color: #377dff !important;
-  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   font-weight: 600;
   border-radius: 0px !important;
@@ -321,7 +308,6 @@ footer {
 }
 
 .trainer-area__image img {
-  -webkit-transition: 0.3s all linear;
   transition: 0.3s all linear;
 }
 
@@ -332,8 +318,7 @@ footer {
   margin: -50px 20px 0px;
   z-index: 1;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 10px 10px rgba(195, 195, 195, 0.2);
-          box-shadow: 0px 10px 10px rgba(195, 195, 195, 0.2);
+  box-shadow: 0px 10px 10px rgba(195, 195, 195, 0.2);
 }
 
 .trainer-area__info h5 {
@@ -349,8 +334,7 @@ footer {
 }
 
 .trainer-area:hover .trainer-area__image img {
-  -webkit-transform: rotate(5deg) scale(1.1);
-          transform: rotate(5deg) scale(1.1);
+  transform: rotate(5deg) scale(1.1);
 }
 
 /* === For Small Device ( 0px - 767px) == */
@@ -392,13 +376,9 @@ footer {
   font-size: 16px;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .call-to-action__title h4 {
-    font-weight: 700;
-    font-size: 26px;
-  }
-}
-
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
 .go {
   background-color: #377dff;
   color: #fff;
@@ -450,15 +430,9 @@ footer {
 }
 
 .go__btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .go__btns .btn {
@@ -466,7 +440,6 @@ footer {
   color: #252933;
   font-size: 18px;
   font-weight: 700;
-  -webkit-transition: background 0.3s linear;
   transition: background 0.3s linear;
 }
 
@@ -497,10 +470,7 @@ footer {
     width: 100% !important;
   }
   .go__btns {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -513,12 +483,8 @@ footer {
 }
 
 .syllabus #accordion .card-header .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   color: #252933;
 }
 
@@ -527,14 +493,11 @@ footer {
 }
 
 .syllabus #accordion .card-header .btn.collapsed i {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .syllabus #accordion .card-header .btn i {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transition: all 0.3s linear;
+  transform: rotate(90deg);
   transition: all 0.3s linear;
   margin-right: 15px;
 }
@@ -556,12 +519,8 @@ footer {
 }
 
 .syllabus #accordion .card__course-syllabus-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 16px 0px;
 }
 
@@ -570,14 +529,105 @@ footer {
   font-weight: 400;
 }
 
+.faq-area__text {
+  margin-bottom: 55px;
+}
+
+.faq-area__text h5 {
+  margin-bottom: 15px;
+  color: #1C1D1F;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.faq-area__text p {
+  color: #677987;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.got-question {
+  background-color: #377dff;
+  padding: 30px;
+  border-radius: 5px;
+  background-image: url(../images/shape/004-comments.svg);
+  background-position: 3%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.got-question__info {
+  color: #ffffff;
+  padding-left: 250px;
+}
+
+.got-question__info h5 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+
+.got-question__info p {
+  font-size: 16px;
+  color: #bbbbbb;
+  margin-bottom: 0px;
+  white-space: nowrap;
+  padding: 8px 0px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .got-question__info {
+    padding-left: 118px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .got-question {
+    flex-wrap: wrap;
+    background-position: top left;
+    background-size: 150px;
+  }
+  .got-question__info {
+    padding-left: 0px;
+    padding-top: 115px;
+    margin: 0px auto 20px;
+  }
+  .got-question .btn {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .got-question {
+    flex-wrap: wrap;
+    background-position: top left;
+    background-size: 150px;
+  }
+  .got-question__info {
+    padding-left: 0px;
+    padding-top: 130px;
+    margin-bottom: 20px;
+  }
+  .got-question .btn {
+    margin: 0 auto;
+  }
+  .got-question__info h5 {
+    text-align: center;
+  }
+  .got-question__info p {
+    white-space: normal;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
 .footer {
   padding: 30px 0px;
 }
 
 .footer .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .footer__logo img {
@@ -585,12 +635,8 @@ footer {
 }
 
 .footer__menues {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .footer__menues li {
@@ -606,13 +652,9 @@ footer {
 }
 
 .footer__social-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .footer__social-icon li {
@@ -641,9 +683,7 @@ footer {
     padding: 12px 0px;
   }
   .footer__social-icon {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -706,8 +746,7 @@ footer {
 .subbanner .avatar img {
   width: 30px;
   height: 30px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -717,7 +756,6 @@ footer {
 
 .subbanner .link-underline {
   color: #677788;
-  -webkit-transition: .3s !important;
   transition: .3s !important;
   font-weight: 600;
   border-bottom: 1px dotted #677788;
@@ -751,12 +789,8 @@ footer {
 }
 
 .features__media {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .features__media span {
@@ -789,8 +823,7 @@ footer {
 
 .card {
   border-width: 0;
-  -webkit-box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
-          box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
+  box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
 }
 
 .card .card-body .card-image img {
@@ -807,3 +840,4 @@ footer {
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
 /* === For Large Device ( 1024px - 1200px) == */
+/*# sourceMappingURL=main.css.map */
