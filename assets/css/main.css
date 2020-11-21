@@ -798,28 +798,28 @@ footer {
   padding: 0 110px;
 }
 
-.card {
+.featurescard {
   max-width: 81%;
   border: 0;
   -webkit-box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
           box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
 }
 
-.card .card-body {
+.featurescard .card-body {
   padding: 24px;
 }
 
-.card .card-body .card-image img {
+.featurescard .card-body .card-image img {
   width: 40px;
 }
 
-.card .card-body h3 {
+.featurescard .card-body h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.6;
 }
 
-.card .card-body p {
+.featurescard .card-body p {
   font-size: 16px;
   font-weight: normal;
   color: #677788;
@@ -857,7 +857,7 @@ footer {
   .features__section h2 {
     font-size: 28px;
   }
-  .card {
+  .featurescard {
     max-width: 100%;
   }
 }
