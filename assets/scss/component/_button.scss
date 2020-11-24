@@ -1,25 +1,27 @@
 .btn-primary {
-  color: #fff;
-  background-color: #377dff;
+	color: #fff;
+	background-color: #377dff;
 
-  &:hover {
-    box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
-    background-color: #0052ea;
-  }
+	&:hover {
+		box-shadow: 0 4px 11px 0px #62d630;
+		// background-color: #62d630;
+	}
 }
-
-
 
 /* ====  Responsive Css will be go here ==== */
 
 /* === For Small Device ( 0px - 767px) == */
-@include small {}
+@include small {
+}
 
 /* === For Extra small Device ( 320px - 575px) == */
-@include ex_small {}
+@include ex_small {
+}
 
 /* === For Medium Device ( 768px - 1023px) == */
-@include medium {}
+@include medium {
+}
 
 /* === For Large Device ( 1024px - 1200px) == */
-@include large {}
+@include large {
+}

@@ -71,9 +71,9 @@ abbr[title] {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Baloo Da 2', cursive;
   font-weight: 400;
-  color: #252933;
+  color: #414742;
 }
 
 section {
@@ -86,7 +86,7 @@ footer {
 }
 
 .btn-primary {
-  background-color: #377dff !important;
+  background-color: #62d630 !important;
 }
 
 .btn {
@@ -100,8 +100,7 @@ footer {
 }
 
 .btn-primary:hover {
-  box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
-  background-color: #0052ea;
+  box-shadow: 0 4px 11px 0px #62d630;
 }
 
 /* ====  Responsive Css will be go here ==== */
@@ -118,7 +117,7 @@ footer {
 }
 
 .nav-item .active {
-  color: #377dff !important;
+  color: #62d630 !important;
 }
 
 .nav-link {
@@ -132,7 +131,7 @@ footer {
 }
 
 .nav-link:hover {
-  color: #377dff !important;
+  color: #62d630 !important;
 }
 
 .nav li {
@@ -150,20 +149,10 @@ footer {
   }
 }
 
-/* === For Extra small Device ( 320px - 575px) == */
-/* === For Medium Device ( 768px - 1023px) == */
-/* === For Large Device ( 1024px - 1200px) == */
-.banner {
-  height: 100vh !important;
-  display: flex;
-  align-items: center;
-  padding: 0px;
-}
-
 .banner__heading {
   font-weight: 600;
   line-height: 1.4;
-  color: #252933;
+  color: #414742;
 }
 
 .banner__pra {
@@ -180,11 +169,11 @@ footer {
 
 .banner__button .btn-link {
   font-weight: 600;
-  color: #377dff;
+  color: #62d630;
 }
 
 .banner__button .btn-link:hover {
-  color: #0052ea;
+  color: #414742;
   text-decoration: none;
 }
 
@@ -193,11 +182,6 @@ footer {
   font-size: 14px;
 }
 
-/* ====  Responsive Css will be go here ==== */
-/* === For Small Device ( 0px - 767px) == */
-/* === For Extra small Device ( 320px - 575px) == */
-/* === For Medium Device ( 768px - 1023px) == */
-/* === For Large Device ( 1024px - 1200px) == */
 .section_title {
   font-size: 48px;
   font-weight: 800;
@@ -205,11 +189,16 @@ footer {
 }
 
 .section_title span {
-  background-color: rgba(55, 125, 255, 0.623);
+  background-color: rgba(98, 214, 48, 0.349);
   border-radius: 5px;
-  padding: 0px 8px;
+  padding: 5px 15px;
   text-transform: lowercase;
-  color: #fff;
+  color: #62d630;
+}
+
+.bootcamp__packages {
+  border: 0px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.356);
 }
 
 .bootcamp__top {
@@ -230,7 +219,7 @@ footer {
 }
 
 .bootcamp__begin-date-info h2 .time {
-  background-color: #377dff;
+  background-color: #62d630;
   color: #fff;
   padding: 8px;
   font-size: 12px;
@@ -244,19 +233,8 @@ footer {
 }
 
 .bootcamp__bottom {
-  border-top: 2px solid #377dff;
+  border-top: 2px solid #62d630;
   padding-top: 16px;
-}
-
-.bootcamp_explore {
-  background-color: #377dff !important;
-  transition: all 0.3s linear;
-  font-weight: 600;
-  border-radius: 0px !important;
-}
-
-.bootcamp_explore:hover {
-  background-color: #252933 !important;
 }
 
 @media (max-width: 1024px) {
@@ -288,14 +266,14 @@ footer {
 }
 
 .trainer-title h6 {
-  color: #5B6D7C;
+  color: #5b6d7c;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
 
 .trainer-title h4 {
-  color: #252933;
+  color: #414742;
   font-weight: bold;
   font-size: 30px;
 }
@@ -328,12 +306,12 @@ footer {
 .trainer-area__info h5 {
   font-size: 20px;
   font-weight: 900;
-  color: #252933;
+  color: #414742;
 }
 
 .trainer-area__info p {
   font-size: 16px;
-  color: #252933;
+  color: #414742;
   margin-bottom: 0 !important;
 }
 
@@ -348,12 +326,9 @@ footer {
   }
 }
 
-/* === For Extra small Device ( 320px - 575px) == */
-/* === For Medium Device ( 768px - 1023px) == */
-/* === For Large Device ( 1024px - 1200px) == */
 .call-to-action {
   padding: 35px 0px 35px 25px;
-  background-color: #377dff;
+  background-color: #62d630;
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -380,15 +355,11 @@ footer {
   font-size: 16px;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .call-to-action__title h4 {
-    font-weight: 700;
-    font-size: 26px;
-  }
-}
-
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
 .go {
-  background-color: #377dff;
+  background-color: #62d630;
   color: #fff;
 }
 
@@ -445,14 +416,14 @@ footer {
 
 .go__btns .btn {
   background-color: #fff !important;
-  color: #252933;
+  color: #414742;
   font-size: 18px;
   font-weight: 700;
   transition: background 0.3s linear;
 }
 
 .go__btns .btn:active {
-  color: #252933 !important;
+  color: #414742 !important;
 }
 
 .go__btns .btn:hover {
@@ -482,9 +453,6 @@ footer {
   }
 }
 
-/* === For Extra small Device ( 320px - 575px) == */
-/* === For Medium Device ( 768px - 1023px) == */
-/* === For Large Device ( 1024px - 1200px) == */
 .syllabus #accordion .card {
   max-width: 750px;
   margin: auto;
@@ -493,7 +461,7 @@ footer {
 .syllabus #accordion .card-header .btn {
   display: flex;
   justify-content: space-between;
-  color: #252933;
+  color: #414742;
 }
 
 .syllabus #accordion .card-header .btn:hover {
@@ -537,6 +505,99 @@ footer {
   font-weight: 400;
 }
 
+.faq-area__text {
+  margin-bottom: 55px;
+}
+
+.faq-area__text h5 {
+  margin-bottom: 15px;
+  color: #1C1D1F;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.faq-area__text p {
+  color: #677987;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.got-question {
+  background-color: #62d630;
+  padding: 30px;
+  border-radius: 5px;
+  background-image: url(../images/shape/004-comments.svg);
+  background-position: 3%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.got-question__info {
+  color: #ffffff;
+  padding-left: 250px;
+}
+
+.got-question__info h5 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+
+.got-question__info p {
+  font-size: 16px;
+  color: #bbbbbb;
+  margin-bottom: 0px;
+  white-space: nowrap;
+  padding: 8px 0px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .got-question__info {
+    padding-left: 118px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .got-question {
+    flex-wrap: wrap;
+    background-position: top left;
+    background-size: 150px;
+  }
+  .got-question__info {
+    padding-left: 0px;
+    padding-top: 115px;
+    margin: 0px auto 20px;
+  }
+  .got-question .btn {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .got-question {
+    flex-wrap: wrap;
+    background-position: top left;
+    background-size: 150px;
+  }
+  .got-question__info {
+    padding-left: 0px;
+    padding-top: 130px;
+    margin-bottom: 20px;
+  }
+  .got-question .btn {
+    margin: 0 auto;
+  }
+  .got-question__info h5 {
+    text-align: center;
+  }
+  .got-question__info p {
+    white-space: normal;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
 .footer {
   padding: 30px 0px;
 }
@@ -561,7 +622,7 @@ footer {
 .footer__menues li a {
   font-size: 16px;
   line-height: 24px;
-  color: #252933;
+  color: #414742;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -602,10 +663,6 @@ footer {
   }
 }
 
-/* === For Small Device ( 0px - 767px) == */
-/* === For Extra small Device ( 320px - 575px) == */
-/* === For Medium Device ( 768px - 1023px) == */
-/* === For Large Device ( 1024px - 1200px) == */
 .subbanner {
   background-size: cover;
   background-repeat: no-repeat;
@@ -648,7 +705,7 @@ footer {
 
 .subbanner__header {
   font-weight: 700;
-  color: #252933;
+  color: #414742;
   line-height: 1.2;
 }
 
@@ -691,6 +748,12 @@ footer {
   margin: 0 auto;
 }
 
+.features__section {
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
 .features__section span {
   font-size: 14px;
   color: #676767;
@@ -700,12 +763,13 @@ footer {
 .features__section h2 {
   font-weight: 700;
   line-height: 1.4;
-  color: #252933;
+  color: #414742;
 }
 
 .features__media {
   display: flex;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 .features__media span {
@@ -720,7 +784,7 @@ footer {
 }
 
 .features__media div {
-  color: #252933;
+  color: #414742;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.6;
@@ -736,20 +800,161 @@ footer {
   color: #4e7fdb;
 }
 
-.card {
-  border-width: 0;
+.padding {
+  padding: 0 110px;
+}
+
+.featurescard {
+  max-width: 81%;
+  border: 0;
   box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
 }
 
-.card .card-body .card-image img {
+.featurescard .card-body {
+  padding: 24px;
+}
+
+.featurescard .card-body .card-image img {
   width: 40px;
+}
+
+.featurescard .card-body h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.featurescard .card-body p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #677788;
+  line-height: 1.6;
+  max-width: 99%;
+}
+
+.dot-shape img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  width: 57%;
 }
 
 /* ====  Responsive Css will be go here ==== */
 /* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .subbanner__header {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .subbanner__pra {
+    font-size: 14px;
+  }
+  .padding {
+    padding: 0;
+  }
+  .features__section {
+    max-width: 100%;
+  }
+  .features__section {
+    margin-bottom: 40px;
+  }
+  .features__section h2 {
+    font-size: 28px;
+  }
+  .featurescard {
+    max-width: 100%;
+  }
+}
+
 /* === For Extra small Device ( 320px - 575px) == */
+@media (min-width: 320px) and (max-width: 575px) {
+  .padding {
+    padding: 0;
+  }
+  .features__section {
+    max-width: 100%;
+  }
+}
+
 /* === For Medium Device ( 768px - 1023px) == */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .padding {
+    padding: 0;
+  }
+  .features__section {
+    max-width: 100%;
+  }
+}
+
 /* === For Large Device ( 1024px - 1200px) == */
+.platform {
+  margin: auto;
+}
+
+.platform__broder {
+  border-bottom: 5px solid #1724b5;
+  padding-bottom: 20px;
+}
+
+.platform__heading-text {
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.platform__heading-text p {
+  font-size: 18px;
+  color: #414742;
+  font-weight: 600;
+}
+
+.platform__title span {
+  font-size: 14px;
+  color: #1724b5;
+  letter-spacing: 2px;
+}
+
+.platform__title h3 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #414742;
+}
+
+.platform__logo {
+  text-align: center;
+}
+
+.platform__logo img {
+  width: 55px;
+}
+
+.platform__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.platform__logo {
+  width: 30%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.platform__logo-three, .platform__logo-six, .platform__logo-nine {
+  border-right: 0;
+}
+
+.platform__logo-seven, .platform__logo-eight, .platform__logo-nine {
+  border-bottom: 0;
+}
+
 /* ====  Responsive Css will be go here ==== */
 /* === For Small Device ( 0px - 767px) == */
 /* === For Extra small Device ( 320px - 575px) == */

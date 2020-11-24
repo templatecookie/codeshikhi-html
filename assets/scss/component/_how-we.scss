@@ -1,105 +1,93 @@
 .go {
-  background-color: color(primary);
-  color: #fff;
+	background-color: color(primary);
+	color: #fff;
 
-  // section -head
-  .section__info {
-    text-align: center !important;
-    margin-bottom: 60px;
-    .section_title {
-      margin-bottom: 0;
-      padding-bottom: 12px;
-      line-height: 32px;
-      span {
-        background-color: transparent;
-        color: #fff;
-      }
-    }
-    .section_brief {
-      font-size: 16px;
-      font-weight: 600;
-      width: 50%;
-      margin: auto;
-      color: rgb(187, 187, 187);
-    }
-  }
+	// section -head
+	.section__info {
+		text-align: center !important;
+		margin-bottom: 60px;
+		.section_title {
+			margin-bottom: 0;
+			padding-bottom: 12px;
+			line-height: 32px;
+			span {
+				background-color: transparent;
+				color: #fff;
+			}
+		}
+		.section_brief {
+			font-size: 16px;
+			font-weight: 600;
+			width: 50%;
+			margin: auto;
+			color: rgb(187, 187, 187);
+		}
+	}
 
-  &__box-content {
-    margin: 30px 0px;
-  }
+	&__box-content {
+		margin: 30px 0px;
+	}
 
-  &_icon {
-    font-size: 18px;
-  }
-  &_title {
-    font-size: 22px;
-    font-weight: 600;
-    margin: 12px 0px;
-  }
-  &_brief {
-    font-size: 18px;
-    line-height: 32px;
-    color: rgb(187, 187, 187);
-    font-weight: 500;
-  }
-  //   box-content
+	&_icon {
+		font-size: 18px;
+	}
+	&_title {
+		font-size: 22px;
+		font-weight: 600;
+		margin: 12px 0px;
+	}
+	&_brief {
+		font-size: 18px;
+		line-height: 32px;
+		color: rgb(187, 187, 187);
+		font-weight: 500;
+	}
+	//   box-content
 
-  //   btns
-  &__btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .btn {
-      background-color: #fff !important;
-      color: color(secondary);
-      font-size: 18px;
-      font-weight: 700;
-      transition: background 0.3s linear;
-      &:active {
-        color: color(secondary) !important;
-      }
-      &:hover {
-        background-color: rgb(48, 15, 78) !important;
-        color: #fff !important;
-      }
-    }
-    li {
-      &:nth-child(2) {
-        padding: 0px 18px;
-        a {
-          color: rgba(221, 221, 221, 0.63);
-        }
-      }
-    }
-  }
+	//   btns
+	&__btns {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.btn {
+			background-color: #fff !important;
+			color: color(secondary);
+			font-size: 18px;
+			font-weight: 700;
+			transition: background 0.3s linear;
+			&:active {
+				color: color(secondary) !important;
+			}
+			&:hover {
+				background-color: rgb(48, 15, 78) !important;
+				color: #fff !important;
+			}
+		}
+		li {
+			&:nth-child(2) {
+				padding: 0px 18px;
+				a {
+					color: rgba(221, 221, 221, 0.63);
+				}
+			}
+		}
+	}
 }
 
 /* ====  Responsive Css will be go here ==== */
 
 /* === For Small Device ( 0px - 767px) == */
 @include small {
-  .section_title {
-    font-size: 28px;
-  }
-  .section_brief {
-    width: 100% !important;
-  }
+	.section_title {
+		font-size: 28px;
+	}
+	.section_brief {
+		width: 100% !important;
+	}
 
-  .go {
-    &__btns {
-      flex-direction: column;
-    }
-  }
-}
-
-/* === For Extra small Device ( 320px - 575px) == */
-@include ex_small {
-}
-
-/* === For Medium Device ( 768px - 1023px) == */
-@include medium {
-}
-
-/* === For Large Device ( 1024px - 1200px) == */
-@include large {
+	.go {
+		&__btns {
+			flex-direction: column;
+		}
+	}
 }

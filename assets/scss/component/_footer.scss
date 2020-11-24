@@ -1,82 +1,66 @@
 .footer {
-  padding: 30px 0px;
-  .row {
-    align-items: center;
-  }
-  //   logo
-  &__logo {
-    img {
-      max-width: 190px;
-    }
-  }
-  // menues
-  &__menues {
-    display: flex;
-    justify-content: center;
-    li {
-      margin: 0px 16px;
-      a {
-        font-size: 16px;
-        line-height: 24px;
-        color: color(secondary);
-        font-weight: 600;
-        text-transform: capitalize;
-      }
-    }
-  }
-  //   social icons
-  &__social-icon {
-    display: flex;
-    margin-left: auto;
-    justify-content: flex-end;
-    li {
-      margin: 0px 16px;
-      a {
-        i {
-          background-color: #ddd;
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          line-height: 30px;
-          text-align: center;
-          color: rgba(2, 2, 2, 0.438);
-        }
-      }
-    }
-  }
+	padding: 30px 0px;
+	.row {
+		align-items: center;
+	}
+	//   logo
+	&__logo {
+		img {
+			max-width: 190px;
+		}
+	}
+	// menues
+	&__menues {
+		display: flex;
+		justify-content: center;
+		li {
+			margin: 0px 16px;
+			a {
+				font-size: 16px;
+				line-height: 24px;
+				color: color(secondary);
+				font-weight: 600;
+				text-transform: capitalize;
+			}
+		}
+	}
+	//   social icons
+	&__social-icon {
+		display: flex;
+		margin-left: auto;
+		justify-content: flex-end;
+		li {
+			margin: 0px 16px;
+			a {
+				i {
+					background-color: #ddd;
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					line-height: 30px;
+					text-align: center;
+					color: rgba(2, 2, 2, 0.438);
+				}
+			}
+		}
+	}
 }
 
 /* ====  Responsive Css will be go here ==== */
 
 //  for large medium - common
 @media (max-width: 991px) {
-  .footer {
-    padding-bottom: 12px;
-    .row {
-      text-align: center;
-    }
-    // menus
-    &__menues {
-      padding: 12px 0px;
-    }
-    &__social-icon {
-      justify-content: center;
-    }
-  }
-}
-
-/* === For Small Device ( 0px - 767px) == */
-@include small {
-}
-
-/* === For Extra small Device ( 320px - 575px) == */
-@include ex_small {
-}
-
-/* === For Medium Device ( 768px - 1023px) == */
-@include medium {
-}
-
-/* === For Large Device ( 1024px - 1200px) == */
-@include large {
+	.footer {
+		padding-bottom: 12px;
+		.row {
+			text-align: center;
+		}
+		// menus
+		&__menues {
+			padding: 12px 0px;
+		}
+		&__social-icon {
+			justify-content: center;
+		}
+	}
 }

@@ -1,10 +1,11 @@
 //  Colors variable goes here
-$colors: (primary: #377dff,
-    secondary: #252933,
+$colors: (
+	primary: #62d630,
+	secondary: #414742,
 );
 
 @function color($color-name) {
-    @return map-get($map: $colors, $key: $color-name);
+	@return map-get($map: $colors, $key: $color-name);
 }
 
 // Fonts Variable goes here

@@ -1,12 +1,12 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  color: color(secondary);
+	font-family: 'Baloo Da 2', cursive;
+	font-weight: 400;
+	color: color(secondary);
 }
 
 // custom Padding
 section {
-  padding: 90px 0px;
+	padding: 90px 0px;
 }
 
 // custom container
@@ -20,7 +20,7 @@ section {
 // section
 section,
 footer {
-  padding: 90px 0px;
+	padding: 90px 0px;
 }
 
 // button
@@ -47,10 +47,10 @@ footer {
 // }
 
 .btn-primary {
-  background-color: color(primary) !important;
+	background-color: color(primary) !important;
 }
 
 .btn {
-  padding: 10px 25px;
-  font-weight: 600;
+	padding: 10px 25px;
+	font-weight: 600;
 }

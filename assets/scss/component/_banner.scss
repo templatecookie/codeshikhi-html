@@ -1,12 +1,4 @@
 .banner {
-	height: 100vh !important;
-	display: flex;
-	align-items: center;
-	padding: 0px;
-	&__content {
-		// max-width: 450px;
-	}
-
 	&__heading {
 		font-weight: 600;
 		line-height: 1.4;
@@ -31,7 +23,7 @@
 			color: color(primary);
 
 			&:hover {
-				color: #0052ea;
+				color: color(secondary);
 				text-decoration: none;
 			}
 		}
@@ -41,22 +33,4 @@
 		color: #677788;
 		font-size: 14px;
 	}
-}
-
-/* ====  Responsive Css will be go here ==== */
-
-/* === For Small Device ( 0px - 767px) == */
-@include small {
-}
-
-/* === For Extra small Device ( 320px - 575px) == */
-@include ex_small {
-}
-
-/* === For Medium Device ( 768px - 1023px) == */
-@include medium {
-}
-
-/* === For Large Device ( 1024px - 1200px) == */
-@include large {
 }

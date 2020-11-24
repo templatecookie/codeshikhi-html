@@ -1,61 +1,40 @@
 .call-to-action {
-    padding: 35px 0px 35px 25px;
-    background-color: color(primary);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 5px;
-    margin-bottom: 30px;
+	padding: 35px 0px 35px 25px;
+	background-color: color(primary);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 5px;
+	margin-bottom: 30px;
 
-    &__title {
-        color: #fff;
+	&__title {
+		color: #fff;
 
-        h4 {
-            font-weight: 700;
-            font-size: 28px;
-        }
-    }
+		h4 {
+			font-weight: 700;
+			font-size: 28px;
+		}
+	}
 
-    &__text {
-        margin: 15px 0px 18px;
-        color: #fff;
-        max-width: 300px;
+	&__text {
+		margin: 15px 0px 18px;
+		color: #fff;
+		max-width: 300px;
 
-        p {
-            font-size: 16px;
-        }
-    }
+		p {
+			font-size: 16px;
+		}
+	}
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-    .call-to-action__title h4 {
-        font-weight: 700;
-        font-size: 26px;
-    }
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
 }
 
-// Responsive
-// Responsive function
-@mixin ex_small {
-    @media (min-width: 320px) and(max-width: 575px) {
-        @content;
-    }
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
 }
 
-@mixin small {
-    @media (max-width: 767px) {
-        @content;
-    }
-}
-
-@mixin medium {
-    @media (min-width: 768px) and (max-width: 1023px) {
-        @content;
-    }
-}
-
-@mixin large {
-    @media (min-width: 1024px) and (max-width: 1200px) {
-        @content;
-    }
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
 }
