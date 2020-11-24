@@ -1,45 +1,44 @@
-.navbar{
-    padding: 25px 0;
-    &-brand{
-        img{
-            width: 200px;
-        }
-    }
+.navbar {
+	padding: 25px 0;
+	&-brand {
+		img {
+			width: 200px;
+		}
+	}
 }
-.nav{
-    &-item{
-        .active{
-            color: color(primary) !important;
-        }
-    }
-    &-link{
-        padding-right: 15px !important;
-        padding-left: 15px !important;
-        font-size: 16px;
-        color: #677788 !important;
-        font-weight: 600;
-        transition: .3s;
-        &:hover{
-            color: color(primary) !important;
-        }
-    }
-    li{
-        margin-left: 15px;
-    }
+.nav {
+	&-item {
+		.active {
+			color: color(primary) !important;
+		}
+	}
+	&-link {
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+		font-size: 16px;
+		color: #677788 !important;
+		font-weight: 600;
+		transition: color 0.3s linear;
+		text-transform: capitalize;
+		&:hover {
+			color: color(primary) !important;
+		}
+	}
+	li {
+		margin-left: 15px;
+	}
 }
-
-
 
 // Responsive
 /* === For Small Device ( 0px - 767px) == */
 @include small {
-    .navbar-collapse {
-        background-color: #f8f9fa;
-        padding: 20px 0;
-    }
-    .nav li {
-        padding: 8px 0;
-    }
+	.navbar-collapse {
+		background-color: #f8f9fa;
+		padding: 20px 0;
+	}
+	.nav li {
+		padding: 8px 0;
+	}
 }
 /* === For Extra small Device ( 320px - 575px) == */
 @include ex_small {
