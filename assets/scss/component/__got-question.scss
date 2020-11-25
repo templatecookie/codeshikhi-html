@@ -16,7 +16,7 @@
         }
         p{
             font-size: 16px;
-            color: #bbbbbb;
+            color: rgba(255, 255, 255, 0.75);
             margin-bottom: 0px;
             white-space: nowrap;
             padding: 8px 0px;
@@ -29,19 +29,19 @@
     }
  }
  @media (min-width: 576px) and (max-width: 767px) {
-        .got-question{
-            flex-wrap: wrap;
-            background-position: top left;
-            background-size: 150px;
-        }
-        .got-question__info {
-            padding-left:0px;
-            padding-top: 115px;
-            margin: 0px auto 20px;
-        }
-        .got-question .btn{
-            margin: 0 auto;
-        }
+    .got-question{
+        flex-wrap: wrap;
+        background-position: top left;
+        background-size: 150px;
+    }
+    .got-question__info {
+        padding-left:0px;
+        padding-top: 115px;
+        margin: 0px auto 20px;
+    }
+    .got-question .btn{
+        margin: 0 auto;
+    }
  } 
  @media (max-width: 575px) { 
     .got-question{

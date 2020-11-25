@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -27,7 +28,8 @@ input:focus,
 input {
   border: none;
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 article,
@@ -53,7 +55,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -61,6 +64,13 @@ abbr[title] {
  * Remove the text shadow on text selections (opinionated).
  * 1. Restore the coloring undone by defining the text shadow (opinionated).
  */
+::-moz-selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000000;
+  /* 1 */
+  text-shadow: none;
+}
 
 ::selection {
   background-color: #b3d4fc;
@@ -100,7 +110,8 @@ footer {
 }
 
 .btn-primary:hover {
-  box-shadow: 0 4px 11px 0px #62d630;
+  -webkit-box-shadow: 0 4px 11px 0px #62d630;
+          box-shadow: 0 4px 11px 0px #62d630;
 }
 
 /* ====  Responsive Css will be go here ==== */
@@ -126,6 +137,7 @@ footer {
   font-size: 16px;
   color: #677788 !important;
   font-weight: 600;
+  -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
   text-transform: capitalize;
 }
@@ -198,7 +210,8 @@ footer {
 
 .bootcamp__packages {
   border: 0px;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.356);
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.356);
+          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.356);
 }
 
 .bootcamp__top {
@@ -290,6 +303,7 @@ footer {
 }
 
 .trainer-area__image img {
+  -webkit-transition: 0.3s all linear;
   transition: 0.3s all linear;
 }
 
@@ -300,7 +314,8 @@ footer {
   margin: -50px 20px 0px;
   z-index: 1;
   background-color: #ffffff;
-  box-shadow: 0px 10px 10px rgba(195, 195, 195, 0.2);
+  -webkit-box-shadow: 0px 10px 10px rgba(195, 195, 195, 0.2);
+          box-shadow: 0px 10px 10px rgba(195, 195, 195, 0.2);
 }
 
 .trainer-area__info h5 {
@@ -316,7 +331,8 @@ footer {
 }
 
 .trainer-area:hover .trainer-area__image img {
-  transform: rotate(5deg) scale(1.1);
+  -webkit-transform: rotate(5deg) scale(1.1);
+          transform: rotate(5deg) scale(1.1);
 }
 
 /* === For Small Device ( 0px - 767px) == */
@@ -404,14 +420,20 @@ footer {
 .go_brief {
   font-size: 18px;
   line-height: 32px;
-  color: #bbbbbb;
+  color: rgba(255, 255, 255, 0.75);
   font-weight: 500;
 }
 
 .go__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .go__btns .btn {
@@ -419,6 +441,7 @@ footer {
   color: #414742;
   font-size: 18px;
   font-weight: 700;
+  -webkit-transition: background 0.3s linear;
   transition: background 0.3s linear;
 }
 
@@ -449,7 +472,10 @@ footer {
     width: 100% !important;
   }
   .go__btns {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -459,8 +485,12 @@ footer {
 }
 
 .syllabus #accordion .card-header .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #414742;
 }
 
@@ -469,11 +499,14 @@ footer {
 }
 
 .syllabus #accordion .card-header .btn.collapsed i {
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .syllabus #accordion .card-header .btn i {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   margin-right: 15px;
 }
@@ -495,8 +528,12 @@ footer {
 }
 
 .syllabus #accordion .card__course-syllabus-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 16px 0px;
 }
 
@@ -546,7 +583,7 @@ footer {
 
 .got-question__info p {
   font-size: 16px;
-  color: #bbbbbb;
+  color: rgba(255, 255, 255, 0.75);
   margin-bottom: 0px;
   white-space: nowrap;
   padding: 8px 0px;
@@ -560,7 +597,8 @@ footer {
 
 @media (min-width: 576px) and (max-width: 767px) {
   .got-question {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background-position: top left;
     background-size: 150px;
   }
@@ -576,7 +614,8 @@ footer {
 
 @media (max-width: 575px) {
   .got-question {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background-position: top left;
     background-size: 150px;
   }
@@ -603,7 +642,9 @@ footer {
 }
 
 .footer .row {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__logo img {
@@ -611,8 +652,12 @@ footer {
 }
 
 .footer__menues {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__menues li {
@@ -628,9 +673,13 @@ footer {
 }
 
 .footer__social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .footer__social-icon li {
@@ -659,7 +708,9 @@ footer {
     padding: 12px 0px;
   }
   .footer__social-icon {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -718,7 +769,8 @@ footer {
 .subbanner .avatar img {
   width: 30px;
   height: 30px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
 }
 
@@ -728,6 +780,7 @@ footer {
 
 .subbanner .link-underline {
   color: #677788;
+  -webkit-transition: .3s !important;
   transition: .3s !important;
   font-weight: 600;
   border-bottom: 1px dotted #677788;
@@ -767,8 +820,12 @@ footer {
 }
 
 .features__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 32px;
 }
 
@@ -807,7 +864,8 @@ footer {
 .featurescard {
   max-width: 81%;
   border: 0;
-  box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
+  -webkit-box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
+          box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
 }
 
 .featurescard .card-body {
@@ -931,18 +989,31 @@ footer {
 
 .platform__list {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .platform__logo {
   width: 30%;
   height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid #eee;
   border-right: 1px solid #eee;
 }
