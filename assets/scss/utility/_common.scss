@@ -4,6 +4,11 @@ body {
 	color: color(secondary);
 }
 
+a {
+	display: inline-block;
+	transition: color 0.2s linear;
+}
+
 // custom Padding
 section {
 	padding: 90px 0px;

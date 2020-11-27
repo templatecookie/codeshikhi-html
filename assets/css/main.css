@@ -86,6 +86,12 @@ body {
   color: #414742;
 }
 
+a, a:hover, a:active, a:focus {
+  display: inline-block;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
 section {
   padding: 90px 0px;
 }
@@ -187,8 +193,6 @@ ul.check-list li p {
   font-size: 16px;
   color: #677788 !important;
   font-weight: 600;
-  -webkit-transition: color 0.3s linear;
-  transition: color 0.3s linear;
   text-transform: capitalize;
 }
 
@@ -251,7 +255,7 @@ ul.check-list li p {
 }
 
 .section_title span {
-  background-color: rgba(98, 214, 48, 0.349);
+  background-color: #f3ffee;
   border-radius: 5px;
   padding: 5px 15px;
   text-transform: lowercase;
@@ -801,7 +805,7 @@ section.bootcamp .bootcamp-preview .footer .info p {
 }
 
 .footer {
-  padding: 30px 0px;
+  padding: 35px 0px;
 }
 
 .footer .row {
@@ -835,6 +839,10 @@ section.bootcamp .bootcamp-preview .footer .info p {
   text-transform: capitalize;
 }
 
+.footer__menues li a:hover {
+  color: #62d630;
+}
+
 .footer__social-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -849,14 +857,19 @@ section.bootcamp .bootcamp-preview .footer .info p {
   margin: 0px 16px;
 }
 
-.footer__social-icon li a i {
-  background-color: #ddd;
-  width: 30px;
-  height: 30px;
+.footer__social-icon li a {
+  background-color: rgba(65, 71, 66, 0.15);
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
   border-radius: 50%;
-  line-height: 30px;
   text-align: center;
-  color: rgba(2, 2, 2, 0.438);
+  color: #414742;
+}
+
+.footer__social-icon li a:hover {
+  color: white;
+  background-color: #62d630;
 }
 
 /* ====  Responsive Css will be go here ==== */
