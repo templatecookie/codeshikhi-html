@@ -99,9 +99,59 @@ footer {
   background-color: #62d630 !important;
 }
 
+.btn-outline-primary {
+  background-color: transparent !important;
+  border: 1px solid #62d630 !important;
+  color: #62d630 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #62d630 !important;
+  color: #414742 !important;
+}
+
 .btn {
   padding: 10px 25px;
   font-weight: 600;
+}
+
+ul.check-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+ul.check-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+ul.check-list li i {
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  color: #62d630;
+  background: rgba(55, 125, 255, 0.1);
+  background-color: rgba(98, 214, 48, 0.15);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+
+ul.check-list li p {
+  color: #414742;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-left: 18px;
+  margin-bottom: 0;
 }
 
 .btn-primary {
@@ -110,8 +160,8 @@ footer {
 }
 
 .btn-primary:hover {
-  -webkit-box-shadow: 0 4px 11px 0px #62d630;
-          box-shadow: 0 4px 11px 0px #62d630;
+  -webkit-box-shadow: 0 5px 10px 0px rgba(65, 71, 66, 0.2);
+          box-shadow: 0 5px 10px 0px rgba(65, 71, 66, 0.2);
 }
 
 /* ====  Responsive Css will be go here ==== */
@@ -274,6 +324,119 @@ footer {
 
 /* === For Medium Device ( 768px - 1023px) == */
 /* === For Large Device ( 1024px - 1200px) == */
+section.bootcamp {
+  background-color: #edefff;
+}
+
+section.bootcamp .heading-title {
+  font-size: 48px;
+  font-weight: 800;
+  padding-bottom: 60px;
+}
+
+section.bootcamp .heading-title span {
+  background-color: rgba(98, 214, 48, 0.15);
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-transform: lowercase;
+  color: #62d630;
+}
+
+section.bootcamp .bootcamp-preview {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 20px rgba(65, 71, 66, 0.1);
+          box-shadow: 0 0 20px rgba(65, 71, 66, 0.1);
+}
+
+section.bootcamp .bootcamp-preview .header {
+  border-bottom: 1px solid #ececec;
+  padding: 20px 30px;
+}
+
+section.bootcamp .bootcamp-preview .header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+section.bootcamp .bootcamp-preview .header .title .icon {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background-color: rgba(98, 214, 48, 0.15);
+  text-align: center;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+section.bootcamp .bootcamp-preview .header .title p {
+  font-size: 24px;
+  margin-bottom: 0;
+  color: #414742;
+  font-weight: bolder;
+}
+
+section.bootcamp .bootcamp-preview .header p {
+  color: #414742;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+section.bootcamp .bootcamp-preview .body {
+  border-bottom: 1px solid #ececec;
+  padding: 20px 30px;
+}
+
+section.bootcamp .bootcamp-preview .body .headline {
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+section.bootcamp .bootcamp-preview .body .check-list {
+  margin-bottom: 0;
+}
+
+section.bootcamp .bootcamp-preview .body .check-list li {
+  width: 50%;
+}
+
+section.bootcamp .bootcamp-preview .body .check-list li p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+section.bootcamp .bootcamp-preview .footer {
+  padding: 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.bootcamp .bootcamp-preview .footer .info h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #414742;
+}
+
+section.bootcamp .bootcamp-preview .footer .info p {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: rgab(#414742, 0.5);
+}
+
 .trainer-title {
   margin-bottom: 60px;
 }

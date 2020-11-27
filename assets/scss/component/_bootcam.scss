@@ -90,3 +90,94 @@
 /* === For Large Device ( 1024px - 1200px) == */
 @include large {
 }
+
+
+section.bootcamp {
+	background-color: #edefff;
+	.heading-title {
+		font-size: 48px;
+		font-weight: 800;
+		padding-bottom: 60px;
+		span {
+			background-color: rgba(color(primary), 0.15);
+			border-radius: 5px;
+			padding: 5px 15px;
+			text-transform: lowercase;
+			color: color(primary);
+		}
+	}
+	.bootcamp{
+		&-preview {
+			border: 1px solid #fff;
+			border-radius: 5px;
+			margin-bottom: 50px;
+			background-color: white;
+			box-shadow: 0 0 20px rgba(65, 71,66, 0.1);
+			.header {
+				border-bottom: 1px solid #ececec;
+				padding: 20px 30px;
+				.title {
+					display: flex;
+					align-items: center;
+					margin-bottom: 20px;
+					.icon {
+						height: 40px;
+						width: 40px;
+						line-height: 40px;
+						background-color: rgba(color(primary), 0.15);
+						text-align: center;
+						margin-right: 20px;
+						border-radius: 5px;
+					}
+					p {
+						font-size: 24px;
+						margin-bottom: 0;
+						color: color(secondary);
+						font-weight: bolder;
+					}
+				}
+				p {
+					color: color(secondary);
+					line-height: 28px;
+					margin-bottom: 0;
+				}
+			}
+			.body {
+				border-bottom: 1px solid #ececec;
+				padding: 20px 30px;
+				.headline {
+					font-weight: bolder;
+					font-size: 20px;
+					margin-bottom: 20px;
+				}
+				.check-list {
+					margin-bottom: 0;
+					li {
+						width: 50%;
+						p {
+							font-family: 'Open Sans', sans-serif;
+						}
+					}
+				}
+			}
+			.footer {
+				padding: 20px 30px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.info {
+					h5 {
+						font-size: 16px;
+						font-weight: bold;
+						color: color(secondary);
+					}
+					p {
+						margin-bottom: 0;
+						font-size: 16px;
+						color: rgab(color(secondary), 0.5);
+					}
+				}
+			}
+		}
+	}
+}
