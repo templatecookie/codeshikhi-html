@@ -9,7 +9,7 @@
 .nav {
 	&-item {
 		.active {
-			color: color(primary) !important;
+			color: $primary !important;
 		}
 	}
 	&-link {
@@ -20,7 +20,7 @@
 		font-weight: 600;
 		text-transform: capitalize;
 		&:hover {
-			color: color(primary) !important;
+			color: $primary !important;
 		}
 	}
 	li {

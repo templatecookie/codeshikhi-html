@@ -2,7 +2,7 @@
 	&__heading {
 		font-weight: 600;
 		line-height: 1.4;
-		color: color(secondary);
+		color: $dark;
 	}
 
 	&__pra {
@@ -20,10 +20,10 @@
 
 		.btn-link {
 			font-weight: 600;
-			color: color(primary);
+			color: $primary;
 
 			&:hover {
-				color: color(secondary);
+				color: $dark;
 				text-decoration: none;
 			}
 		}

@@ -18,11 +18,11 @@
 			a {
 				font-size: 16px;
 				line-height: 24px;
-				color: color(secondary);
+				color: $dark;
 				font-weight: 600;
 				text-transform: capitalize;
 				&:hover {
-					color: color(primary);
+					color: $primary;
 				}
 			}
 		}
@@ -35,16 +35,16 @@
 		li {
 			margin: 0px 16px;
 			a {
-				background-color: rgba(color(secondary), 0.15);
+				background-color: rgba($dark, 0.15);
 				width: 35px;
 				height: 35px;
 				line-height: 35px;
 				border-radius: 50%;
 				text-align: center;
-				color: color(secondary);
+				color: $dark;
 				&:hover{
 					color: white;
-					background-color: color(primary);
+					background-color: $primary;
 				}
 			}
 		}

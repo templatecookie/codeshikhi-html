@@ -1,7 +1,7 @@
 body {
 	font-family: 'Baloo Da 2', cursive;
 	font-weight: 400;
-	color: color(secondary);
+	color: $dark;
 }
 
 a {
@@ -41,7 +41,7 @@ footer {
 //     font-size: 24px;
 //     line-height: 68px;
 //     font-weight: 700;
-//     color: color(primary);
+//     color: $primary;
 //   }
 
 //   &_brief {
@@ -52,16 +52,16 @@ footer {
 // }
 
 .btn-primary {
-	background-color: color(primary) !important;
+	background-color: $primary !important;
 }
 
 .btn-outline-primary{
 	background-color: transparent !important;
-	border: 1px solid color(primary) !important;
-	color: color(primary) !important;
+	border: 1px solid $primary !important;
+	color: $primary !important;
 	&:hover{
-		background-color: color(primary) !important;
-		color: color(secondary) !important;
+		background-color: $primary !important;
+		color: $dark !important;
 	}
 }
 
@@ -81,16 +81,16 @@ ul.check-list {
 			font-size: 14px;
 			width: 30px;
 			height: 30px;
-			color: color(primary);
+			color: $primary;
 			background: rgba(55, 125, 255, 0.1);
-			background-color: rgba(color(primary), 0.15);
+			background-color: rgba($primary, 0.15);
 			border-radius: 50%;
 			text-align: center;
 			line-height: 30px;
 		}
 		
 		p {
-			color: color(secondary);
+			color: $dark;
 			font-size: 16px;
 			font-weight: 600;
 			line-height: 1.6;
@@ -98,4 +98,13 @@ ul.check-list {
 			margin-bottom: 0;
 		}
 	}
+}
+
+
+.bg-dark {
+	background-color: $dark;
+}
+
+.bg-primary {
+	background-color: darken($primary, 5%) !important;
 }

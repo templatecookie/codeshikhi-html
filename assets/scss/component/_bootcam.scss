@@ -12,7 +12,7 @@
 			border-radius: 5px;
 			padding: 5px 15px;
 			text-transform: lowercase;
-			color: color(primary);
+			color: $primary;
 		}
 	}
 }
@@ -40,7 +40,7 @@
 			padding-bottom: 30px;
 
 			.time {
-				background-color: color(primary);
+				background-color: $primary;
 				color: #fff;
 				padding: 8px;
 				font-size: 12px;
@@ -56,7 +56,7 @@
 	}
 
 	&__bottom {
-		border-top: 2px solid color(primary);
+		border-top: 2px solid $primary;
 		padding-top: 16px;
 	}
 }
@@ -100,11 +100,11 @@ section.bootcamp {
 		font-weight: 800;
 		padding-bottom: 60px;
 		span {
-			background-color: rgba(color(primary), 0.15);
+			background-color: rgba($primary, 0.15);
 			border-radius: 5px;
 			padding: 5px 15px;
 			text-transform: lowercase;
-			color: color(primary);
+			color: $primary;
 		}
 	}
 	.bootcamp{
@@ -125,7 +125,7 @@ section.bootcamp {
 						height: 40px;
 						width: 40px;
 						line-height: 40px;
-						background-color: rgba(color(primary), 0.15);
+						background-color: rgba($primary, 0.15);
 						text-align: center;
 						margin-right: 20px;
 						border-radius: 5px;
@@ -133,12 +133,12 @@ section.bootcamp {
 					p {
 						font-size: 24px;
 						margin-bottom: 0;
-						color: color(secondary);
+						color: $dark;
 						font-weight: bolder;
 					}
 				}
 				p {
-					color: color(secondary);
+					color: $dark;
 					line-height: 28px;
 					margin-bottom: 0;
 				}
@@ -170,12 +170,12 @@ section.bootcamp {
 					h5 {
 						font-size: 16px;
 						font-weight: bold;
-						color: color(secondary);
+						color: $dark;
 					}
 					p {
 						margin-bottom: 0;
 						font-size: 16px;
-						color: rgab(color(secondary), 0.5);
+						color: rgab($dark, 0.5);
 					}
 				}
 			}

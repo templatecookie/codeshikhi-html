@@ -7,7 +7,7 @@
         .btn {
           display: flex;
           justify-content: space-between;
-          color: color(secondary);
+          color: $dark;
           &:hover {
             text-decoration: none;
           }

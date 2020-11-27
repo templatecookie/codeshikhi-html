@@ -160,6 +160,14 @@ ul.check-list li p {
   margin-bottom: 0;
 }
 
+.bg-dark {
+  background-color: #414742;
+}
+
+.bg-primary {
+  background-color: #57c527 !important;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #377dff;
@@ -511,7 +519,6 @@ section.bootcamp .bootcamp-preview .footer .info p {
 
 .call-to-action {
   padding: 35px 0px 35px 25px;
-  background-color: #62d630;
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
