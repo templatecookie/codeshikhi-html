@@ -54,3 +54,79 @@
     }
   }
 }
+
+.toggle {
+    margin-bottom: 10px;
+    &.active {
+        .header {
+            border-bottom: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-color: $dark;
+            // background-color: $dark !important;
+            // color: white;
+        }
+        .content {
+            display: block;
+            border-color: $dark;
+        }
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgba($dark, 0.2);
+        padding: 10px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        .lecture-count {
+            margin-bottom: 0;
+        }
+        .icon-group {
+            .text {
+                font-weight: 700;
+            }
+        }
+    }
+    .content {
+        padding: 20px 30px;
+        border: 1px solid rgba($dark, 0.2); 
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: none;
+        .class {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            margin-bottom: 5px;
+            .count {
+                color: rgba($dark, 0.8);
+            }
+            .icon-group {
+                i {
+                    color: rgba($dark, 0.8);
+                }
+                .text {
+                    color: rgba($dark, 0.8);
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .icon-group {
+        display: flex;
+        align-items: center;
+        i {
+            margin-right: 10px;
+        }
+        .text {
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
