@@ -25,7 +25,10 @@
 		overflow: hidden;
 
 		img {
-			transition: 0.3s all linear;
+            transition: 0.3s all linear;
+            height: 310px;
+            width: 100%;
+            object-fit: cover;
 		}
 	}
 

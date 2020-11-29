@@ -497,6 +497,10 @@ section.bootcamp .heading-title span {
 .trainer-area__image img {
   -webkit-transition: 0.3s all linear;
   transition: 0.3s all linear;
+  height: 310px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .trainer-area__info {
