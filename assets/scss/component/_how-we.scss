@@ -1,5 +1,5 @@
 .go {
-	background-color: $primary;
+	// background-color: $primary;
 	color: #fff;
 
 	// section -head
@@ -49,20 +49,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		.btn {
-			background-color: #fff !important;
-			color: $dark;
-			font-size: 18px;
-			font-weight: 700;
-			transition: background 0.3s linear;
-			&:active {
-				color: $dark !important;
-			}
-			&:hover {
-				background-color: rgb(48, 15, 78) !important;
-				color: #fff !important;
-			}
-		}
 		li {
 			&:nth-child(2) {
 				padding: 0px 18px;

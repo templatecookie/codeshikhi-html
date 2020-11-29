@@ -21,40 +21,6 @@
             color: $dark;
         }
     }
-
-    &__media {
-        display: flex;
-        align-items: center;
-        margin-bottom: 32px;
-
-        span {
-            font-size: 14px;
-            width: 30px;
-            height: 30px;
-            color: #377dff;
-            background: rgba(55, 125, 255, 0.1);
-            border-radius: 50%;
-            text-align: center;
-            line-height: 30px;
-        }
-
-        div {
-            color: $dark;
-            font-size: 1rem;
-            font-weight: 600;
-            line-height: 1.6;
-            margin-left: 18px;
-        }
-
-        .link {
-            color: #377dff;
-            cursor: pointer;
-
-            &:hover {
-                color: #4e7fdb;
-            }
-        }
-    }
 }
 .padding{
     padding: 0 110px;

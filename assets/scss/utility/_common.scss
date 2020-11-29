@@ -71,8 +71,6 @@ footer {
 }
 
 ul.check-list {
-	display: flex;
-	flex-wrap: wrap;
 	li {
 		display: flex;
 		align-items: center;
@@ -107,4 +105,19 @@ ul.check-list {
 
 .bg-primary {
 	background-color: darken($primary, 5%) !important;
+}
+
+.bg-gray {
+    background-color: rgb(229, 231, 235) !important;
+}
+
+.bg-light-gray {
+	background-color: #edefff !important;
+}
+
+.text-color {
+    color: rgb(16, 185, 129) !important;
+}
+.bg-color {
+    background-color: rgb(52, 211, 153) !important;
 }
