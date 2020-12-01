@@ -181,6 +181,22 @@ ul.check-list li p {
           transform: translateY(50%);
 }
 
+.icon-box {
+  margin-bottom: 10px;
+}
+
+.icon-box i {
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  color: #62d630;
+  background: rgba(55, 125, 255, 0.1);
+  background-color: rgba(98, 214, 48, 0.15);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #377dff;
@@ -1266,7 +1282,7 @@ section.bootcamp .heading-title span {
 
 .platform__title span {
   font-size: 14px;
-  color: #1724b5;
+  color: #62d630;
   letter-spacing: 2px;
 }
 

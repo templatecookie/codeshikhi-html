@@ -126,3 +126,18 @@ ul.check-list {
 .transform-y50 {
     transform: translateY(50%);
 }
+
+.icon-box {
+    margin-bottom: 10px;
+    i {
+        font-size: 18px;
+        width: 50px;
+        height: 50px;
+        color: $primary;
+        background: rgba(55, 125, 255, 0.1);
+        background-color: rgba($primary, 0.15);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+    }
+}
