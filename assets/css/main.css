@@ -846,15 +846,15 @@ section.bootcamp .heading-title span {
   --buttonDisabledOpacity: 0.7;
   --knockoutColor: #fff;
   --knockoutDisabledColor: #8898aa;
-  --guideSolidColor: rgba(66,71,112,0.06);
-  --guideDashedColor: rgba(66,71,112,0.09);
+  --guideSolidColor: rgba(66, 71, 112, 0.06);
+  --guideDashedColor: rgba(66, 71, 112, 0.09);
   --titleColor: #0a2540;
   --textColor: #425466;
   --inputBackground: #f1f4f7;
   --inputPlaceholderColor: #acb9c5;
   --inputTextColor: #0a2540;
   --annotationColor: #8c9eb1;
-  --maskFadeColor: rgba(0,0,0,0.4);
+  --maskFadeColor: rgba(0, 0, 0, 0.4);
   --navColor: #0a2540;
   --navHoverColor: #0a2540;
   --navHoverOpacity: 0.6;
