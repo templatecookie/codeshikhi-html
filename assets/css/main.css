@@ -176,6 +176,11 @@ ul.check-list li p {
   background-color: #34d399 !important;
 }
 
+.transform-y50 {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
 .btn-primary {
   color: #fff;
   background-color: #377dff;
@@ -949,12 +954,6 @@ section.bootcamp .heading-title span {
   padding: 35px 0px;
 }
 
-.footer .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .footer__logo img {
   max-width: 190px;
 }
@@ -1029,6 +1028,40 @@ section.bootcamp .heading-title span {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.skew-shape {
+  position: relative;
+  overflow: hidden;
+}
+
+.skew-shape .footer {
+  padding-top: 250px;
+}
+
+.skew-shape .footer.pt-400 {
+  padding-top: 400px;
+}
+
+.skew-shape .absolute {
+  position: absolute;
+  width: 100%;
+  z-index: 11;
+  top: 0;
+  left: 0;
+}
+
+.skew-shape::after {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  content: '';
+  width: calc(100% + 200px);
+  height: 200px;
+  background-color: white;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  z-index: 1;
 }
 
 .subbanner {
