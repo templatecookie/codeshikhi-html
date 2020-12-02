@@ -1344,5 +1344,18 @@ section.bootcamp .heading-title span {
 /* === For Small Device ( 0px - 767px) == */
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
+@media (min-width: 768px) and (max-width: 1023px) {
+  section.bootcamp .heading-title {
+    font-size: 36px;
+  }
+  .bootcamp-block .body .check-list li {
+    width: 100%;
+  }
+  .bootcamp-block .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 /* === For Large Device ( 1024px - 1200px) == */
 /*# sourceMappingURL=main.css.map */
