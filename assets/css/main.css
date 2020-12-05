@@ -1144,10 +1144,22 @@ section.bootcamp .heading-title span {
 }
 
 /* ====  Responsive Css will be go here ==== */
-/* === For Small Device ( 0px - 767px) == */
-/* === For Extra small Device ( 320px - 575px) == */
-/* === For Medium Device ( 768px - 1023px) == */
 /* === For Large Device ( 1024px - 1200px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .skew-shape .footer {
+    padding-top: 360px;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+@media (min-width: 320px) and (max-width: 575px) {
+  .skew-shape .footer {
+    padding-top: 450px;
+  }
+}
+
 .w-80 {
   width: 80%;
   margin: 0 auto;
@@ -1250,12 +1262,19 @@ section.bootcamp .heading-title span {
 }
 
 /* === For Medium Device ( 768px - 1023px) == */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .padding {
     padding: 0;
   }
   .features__section {
     max-width: 100%;
+  }
+  .featurescard {
+    max-width: 100%;
+  }
+  .bootcamp-skew__30 {
+    -webkit-transform: perspective(0px) rotateY(0deg) translateX(0px);
+            transform: perspective(0px) rotateY(0deg) translateX(0px);
   }
 }
 

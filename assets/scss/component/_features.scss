@@ -108,6 +108,12 @@
     .features__section{
         max-width: 100%;
     }
+    .featurescard {
+        max-width: 100%;}
+        
+        .bootcamp-skew__30 {
+            transform: perspective(0px) rotateY(0deg) translateX(0px);
+        }
 }
 
 /* === For Large Device ( 1024px - 1200px) == */

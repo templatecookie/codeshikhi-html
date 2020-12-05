@@ -79,14 +79,24 @@
 
 /* ====  Responsive Css will be go here ==== */
 
-/* === For Small Device ( 0px - 767px) == */
-@include small {}
-
-/* === For Extra small Device ( 320px - 575px) == */
-@include ex_small {}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {}
 
 /* === For Medium Device ( 768px - 1023px) == */
 @include medium {}
 
-/* === For Large Device ( 1024px - 1200px) == */
-@include large {}
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+    .skew-shape .footer {
+        padding-top: 360px;
+    }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+    .skew-shape .footer {
+        padding-top: 450px;
+    }
+}
+
+
