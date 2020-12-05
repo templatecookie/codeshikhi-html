@@ -105,15 +105,28 @@
     .padding{
         padding: 0;
     }
+    
     .features__section{
         max-width: 100%;
     }
+
     .featurescard {
-        max-width: 100%;}
+        max-width: 100%;
+    }
         
-        .bootcamp-skew__30 {
-            transform: perspective(0px) rotateY(0deg) translateX(0px);
+    .bootcamp-skew__30 {
+        transform: perspective(0px) rotateY(0deg) translateX(0px);
+    }
+}
+
+@include mx_medium {
+    .features .check-list {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: 50%;
         }
+    } 
 }
 
 /* === For Large Device ( 1024px - 1200px) == */

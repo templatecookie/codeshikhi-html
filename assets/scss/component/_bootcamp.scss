@@ -123,6 +123,12 @@ section.bootcamp {
 @include medium {
 }
 
+@include mx_medium {
+    .bootcamp-block.bootcamp-skew__30 {
+        transform: none;
+    }
+}
+
 /* === For Large Device ( 1024px - 1200px) == */
 @include large {
 

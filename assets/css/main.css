@@ -437,6 +437,13 @@ section.bootcamp .heading-title span {
 }
 
 /* === For Medium Device ( 768px - 1023px) == */
+@media (max-width: 991px) {
+  .bootcamp-block.bootcamp-skew__30 {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 /* === For Large Device ( 1024px - 1200px) == */
 .trainer-title {
   margin-bottom: 60px;
@@ -1268,6 +1275,19 @@ section.bootcamp .heading-title span {
   }
 }
 
+@media (max-width: 991px) {
+  .features .check-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .features .check-list li {
+    width: 50%;
+  }
+}
+
 /* === For Large Device ( 1024px - 1200px) == */
 .platform {
   margin: auto;
@@ -1296,9 +1316,6 @@ section.bootcamp .heading-title span {
 }
 
 .platform__title h3 {
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.6;
   color: #414742;
 }
 
@@ -1347,5 +1364,11 @@ section.bootcamp .heading-title span {
 
 .platform__logo-seven, .platform__logo-eight, .platform__logo-nine {
   border-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .platform__title {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
