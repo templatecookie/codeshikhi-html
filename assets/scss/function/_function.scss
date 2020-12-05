@@ -23,15 +23,27 @@
   }
 }
 
+@mixin  mx_medium {
+    @media(max-width: 991px) {
+        @content;
+    }
+}
+
 // === For Large Device ( 1024px - 1200px) == /
 @include large {
 }
 // === For Medium Device ( 768px - 1023px) == /
 @include medium {
 }
+
+// === For Extra maximum medium  Device ( 0 - 991px) == /
+@include mx_medium {
+}
+
 // === For Small Device ( 0px - 767px) == /
 @include small {
 }
 // === For Extra small Device ( 320px - 575px) == /
 @include ex_small {
 }
+

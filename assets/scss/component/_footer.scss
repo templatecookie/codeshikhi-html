@@ -45,27 +45,16 @@
 				}
 			}
 		}
-	}
+    }
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 /* ====  Responsive Css will be go here ==== */
 
-//  for large medium - common
-@media (max-width: 991px) {
-	.footer {
-		padding-bottom: 12px;
-		.row {
-			text-align: center;
-		}
-		// menus
-		&__menues {
-			padding: 12px 0px;
-		}
-		&__social-icon {
-			justify-content: center;
-		}
-	}
-}
 
 .skew-shape {
     .footer {
@@ -96,3 +85,74 @@
         z-index: 1;
     }
 }
+
+@include small {
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        .footer__menues {
+            margin-top: 30px;
+            width: 100%;
+        }
+        .footer__social-icon {
+            margin-top: 10px;
+        }
+    }
+}
+
+@include small {
+    .homepage-footer.bg-light-gray {
+        background-color: transparent !important;
+    }
+}
+
+@include mx_medium {
+    .homepage-footer {
+        &.bg-light-gray {
+            background-color: transparent !important;
+        }
+        &.skew-shape {
+            overflow: visible;
+            position: unset;
+        }
+        .call-action {
+            position: unset;           
+        }
+    }
+}
+
+
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+    .section.bootcamp .heading-title {
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+    section.bootcamp .heading-title {
+        font-size: 36px;
+    }
+    .bootcamp-block .body .check-list li {
+        width: 100%;
+    }
+    .bootcamp-block .footer {
+        flex-wrap: wrap;
+    }
+    .banner__image {
+        display: none;
+    }
+}
+
+@include small {
+    .footer .footer-content {
+        justify-content: center;
+    }
+
+    .footer-content .footer__social-icon {
+        margin-top: 20px;
+    }
+}
+

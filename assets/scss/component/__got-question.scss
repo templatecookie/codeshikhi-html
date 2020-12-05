@@ -1,6 +1,7 @@
 .got-question{
     background-color: $primary;
     padding: 30px;
+    padding-left: 250px;
     border-radius: 5px;
     background-image: url(../images/shape/004-comments.svg);
     background-position: 3%;
@@ -8,7 +9,6 @@
     background-size: contain;
     &__info{
         color: #ffffff;
-        padding-left: 250px;
         h5{
             font-weight: 700;
             font-size: 22px;
@@ -18,51 +18,36 @@
             font-size: 16px;
             color: rgba(255, 255, 255, 0.75);
             margin-bottom: 0px;
-            white-space: nowrap;
             padding: 8px 0px;
         }
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    .got-question__info{
+    .got-question{
         padding-left: 118px;
+        text-align: right;
     }
  }
  @media (min-width: 576px) and (max-width: 767px) {
     .got-question{
         flex-wrap: wrap;
-        background-position: top left;
+        background-position: center left;
         background-size: 150px;
     }
-    .got-question__info {
-        padding-left:0px;
-        padding-top: 115px;
-        margin: 0px auto 20px;
+    .got-question {
+        padding-left: 150px;
     }
     .got-question .btn{
         margin: 0 auto;
     }
  } 
- @media (max-width: 575px) { 
-    .got-question{
-        flex-wrap: wrap;
-        background-position: top left;
-        background-size: 150px;
+@media (max-width: 575px) { 
+    .got-question {
+        background-image: none;
+        padding: 30px;
+        text-align: center;
     }
     .got-question__info {
-        padding-left:0px;
-        padding-top: 130px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
-    .got-question .btn{
-        margin: 0 auto;
-    }
-    .got-question__info h5{
-        text-align: center;
-    }
-    .got-question__info p {
-        white-space: normal;
-        text-align: center;
-        margin-top: 15px;
-    }
-  }
+}

@@ -34,3 +34,13 @@
 		font-size: 14px;
 	}
 }
+
+
+@media(max-width: 767px){
+    section.banner {
+        // padding-top: 0;
+        .banner__image {
+            display: none;
+        }
+    }
+}

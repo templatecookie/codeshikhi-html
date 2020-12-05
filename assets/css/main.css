@@ -285,86 +285,12 @@ ul.check-list li p {
   font-size: 14px;
 }
 
-.section_title {
-  font-size: 48px;
-  font-weight: 800;
-  padding-bottom: 60px;
-}
-
-.section_title span {
-  background-color: #f3ffee;
-  border-radius: 5px;
-  padding: 5px 15px;
-  text-transform: lowercase;
-  color: #62d630;
-}
-
-.bootcamp__packages {
-  border: 0px;
-  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.356);
-          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.356);
-}
-
-.bootcamp__top {
-  text-align: center;
-}
-
-.bootcamp_course-title {
-  text-align: left;
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.bootcamp__begin-date-info h2 {
-  font-size: 18px;
-  font-weight: 800;
-  text-transform: capitalize;
-  padding-bottom: 30px;
-}
-
-.bootcamp__begin-date-info h2 .time {
-  background-color: #62d630;
-  color: #fff;
-  padding: 8px;
-  font-size: 12px;
-}
-
-.bootcamp__begin-date-info h2 .bootcamp_begin {
-  background-color: #f39233;
-  color: #fff;
-  padding: 8px;
-  font-size: 12px;
-}
-
-.bootcamp__bottom {
-  border-top: 2px solid #62d630;
-  padding-top: 16px;
-}
-
-@media (max-width: 1024px) {
-  .bootcamp__packages {
-    margin-bottom: 30px !important;
-  }
-}
-
-/* === For Small Device ( 0px - 767px) == */
 @media (max-width: 767px) {
-  .section_title {
-    font-size: 26px;
-    line-height: 26px;
+  section.banner .banner__image {
+    display: none;
   }
 }
 
-/* === For Extra small Device ( 320px - 575px) == */
-@media (min-width: 320px) and (max-width: 575px) {
-  .section_title {
-    font-size: 18px;
-    line-height: 18px;
-  }
-}
-
-/* === For Medium Device ( 768px - 1023px) == */
-/* === For Large Device ( 1024px - 1200px) == */
 section.bootcamp .heading-title {
   font-size: 48px;
   font-weight: 800;
@@ -377,6 +303,7 @@ section.bootcamp .heading-title span {
   padding: 5px 15px;
   text-transform: lowercase;
   color: #62d630;
+  display: inline-block;
 }
 
 .bootcamp-block {
@@ -487,6 +414,30 @@ section.bootcamp .heading-title span {
           transform: perspective(300px) rotateY(-5deg) translateX(20px);
 }
 
+@media (max-width: 1024px) {
+  .bootcamp__packages {
+    margin-bottom: 30px !important;
+  }
+}
+
+/* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  section.bootcamp .heading-title {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+@media (min-width: 320px) and (max-width: 575px) {
+  .section_title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
 .trainer-title {
   margin-bottom: 60px;
 }
@@ -892,6 +843,7 @@ section.bootcamp .heading-title span {
 .got-question {
   background-color: #62d630;
   padding: 30px;
+  padding-left: 250px;
   border-radius: 5px;
   background-image: url(../images/shape/004-comments.svg);
   background-position: 3%;
@@ -901,7 +853,6 @@ section.bootcamp .heading-title span {
 
 .got-question__info {
   color: #ffffff;
-  padding-left: 250px;
 }
 
 .got-question__info h5 {
@@ -914,13 +865,13 @@ section.bootcamp .heading-title span {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 0px;
-  white-space: nowrap;
   padding: 8px 0px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .got-question__info {
+  .got-question {
     padding-left: 118px;
+    text-align: right;
   }
 }
 
@@ -928,13 +879,11 @@ section.bootcamp .heading-title span {
   .got-question {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-position: top left;
+    background-position: center left;
     background-size: 150px;
   }
-  .got-question__info {
-    padding-left: 0px;
-    padding-top: 115px;
-    margin: 0px auto 20px;
+  .got-question {
+    padding-left: 150px;
   }
   .got-question .btn {
     margin: 0 auto;
@@ -943,26 +892,12 @@ section.bootcamp .heading-title span {
 
 @media (max-width: 575px) {
   .got-question {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    background-position: top left;
-    background-size: 150px;
+    background-image: none;
+    padding: 30px;
+    text-align: center;
   }
   .got-question__info {
-    padding-left: 0px;
-    padding-top: 130px;
-    margin-bottom: 20px;
-  }
-  .got-question .btn {
-    margin: 0 auto;
-  }
-  .got-question__info h5 {
-    text-align: center;
-  }
-  .got-question__info p {
-    white-space: normal;
-    text-align: center;
-    margin-top: 15px;
+    margin-bottom: 10px;
   }
 }
 
@@ -1028,24 +963,19 @@ section.bootcamp .heading-title span {
   background-color: #62d630;
 }
 
-/* ====  Responsive Css will be go here ==== */
-@media (max-width: 991px) {
-  .footer {
-    padding-bottom: 12px;
-  }
-  .footer .row {
-    text-align: center;
-  }
-  .footer__menues {
-    padding: 12px 0px;
-  }
-  .footer__social-icon {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+/* ====  Responsive Css will be go here ==== */
 .skew-shape {
   position: relative;
   overflow: hidden;
@@ -1078,6 +1008,78 @@ section.bootcamp .heading-title span {
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
   z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .footer-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-content .footer__menues {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .footer-content .footer__social-icon {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .homepage-footer.bg-light-gray {
+    background-color: transparent !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .homepage-footer.bg-light-gray {
+    background-color: transparent !important;
+  }
+  .homepage-footer.skew-shape {
+    overflow: visible;
+    position: unset;
+  }
+  .homepage-footer .call-action {
+    position: unset;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+@media (min-width: 320px) and (max-width: 575px) {
+  .section.bootcamp .heading-title {
+    text-align: center;
+    font-size: 35px;
+  }
+}
+
+/* === For Medium Device ( 768px - 1023px) == */
+@media (min-width: 768px) and (max-width: 991px) {
+  section.bootcamp .heading-title {
+    font-size: 36px;
+  }
+  .bootcamp-block .body .check-list li {
+    width: 100%;
+  }
+  .bootcamp-block .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .banner__image {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .footer-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-content .footer__social-icon {
+    margin-top: 20px;
+  }
 }
 
 .subbanner {
@@ -1147,19 +1149,7 @@ section.bootcamp .heading-title span {
 /* === For Large Device ( 1024px - 1200px) == */
 /* === For Medium Device ( 768px - 1023px) == */
 /* === For Small Device ( 0px - 767px) == */
-@media (max-width: 767px) {
-  .skew-shape .footer {
-    padding-top: 360px;
-  }
-}
-
 /* === For Extra small Device ( 320px - 575px) == */
-@media (min-width: 320px) and (max-width: 575px) {
-  .skew-shape .footer {
-    padding-top: 450px;
-  }
-}
-
 .w-80 {
   width: 80%;
   margin: 0 auto;
@@ -1358,23 +1348,4 @@ section.bootcamp .heading-title span {
 .platform__logo-seven, .platform__logo-eight, .platform__logo-nine {
   border-bottom: 0;
 }
-
-/* ====  Responsive Css will be go here ==== */
-/* === For Small Device ( 0px - 767px) == */
-/* === For Extra small Device ( 320px - 575px) == */
-/* === For Medium Device ( 768px - 1023px) == */
-@media (min-width: 768px) and (max-width: 1023px) {
-  section.bootcamp .heading-title {
-    font-size: 36px;
-  }
-  .bootcamp-block .body .check-list li {
-    width: 100%;
-  }
-  .bootcamp-block .footer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-/* === For Large Device ( 1024px - 1200px) == */
 /*# sourceMappingURL=main.css.map */
