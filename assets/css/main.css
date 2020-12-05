@@ -852,7 +852,7 @@ section.bootcamp .heading-title span {
   padding: 30px;
   padding-left: 250px;
   border-radius: 5px;
-  background-image: url(../images/shape/004-comments.svg);
+  background-image: url(../images/comments.svg);
   background-position: 3%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -905,6 +905,20 @@ section.bootcamp .heading-title span {
   }
   .got-question__info {
     margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .got-question {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
