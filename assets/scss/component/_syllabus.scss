@@ -1,188 +1,192 @@
 .syllabus {
-    #accordion {
-        .card {
-            max-width: 750px;
-            margin: auto;
+  #accordion {
+    .card {
+      max-width: 750px;
+      margin: auto;
 
-            &-header {
-                .btn {
-                    display: flex;
-                    justify-content: space-between;
-                    color: $dark;
+      &-header {
+        .btn {
+          display: flex;
+          justify-content: space-between;
+          color: $dark;
 
-                    &:hover {
-                        text-decoration: none;
-                    }
+          &:hover {
+            text-decoration: none;
+          }
 
-                    &.collapsed {
-                        i {
-                            transform: rotate(-90deg);
-                        }
-                    }
-
-                    i {
-                        transform: rotate(90deg);
-                        transition: all 0.3s linear;
-                        margin-right: 15px;
-                    }
-
-                    // left -title
-                    .left {
-                        font-size: 18px;
-                        line-height: 28px;
-                    }
-
-                    .right {
-                        font-size: 14px;
-                        line-height: 24px;
-                        font-weight: 600;
-
-                        .dot {}
-                    }
-                }
+          &.collapsed {
+            i {
+              transform: rotate(-90deg);
             }
+          }
 
-            //card-body{
-            &-body {
-                padding: 1.25rem 35px;
-                margin: 0px 25px;
-            }
+          i {
+            transform: rotate(90deg);
+            transition: all 0.3s linear;
+            margin-right: 15px;
+          }
 
-            // course
-            &__course-syllabus-item {
-                display: flex;
-                justify-content: space-between;
-                margin: 16px 0px;
-            }
+          // left -title
+          .left {
+            font-size: 18px;
+            line-height: 28px;
+          }
 
-            &__preview {
-                font-size: 16px;
-                font-weight: 400;
+          .right {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+
+            .dot {
             }
+          }
         }
+      }
+
+      //card-body{
+      &-body {
+        padding: 1.25rem 35px;
+        margin: 0px 25px;
+      }
+
+      // course
+      &__course-syllabus-item {
+        display: flex;
+        justify-content: space-between;
+        margin: 16px 0px;
+      }
+
+      &__preview {
+        font-size: 16px;
+        font-weight: 400;
+      }
     }
+  }
 }
 
 .toggle {
-    margin-bottom: 10px;
-
-    &.active {
-        .header {
-            border-bottom: 0;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-            border-color: $dark;
-            // background-color: $dark !important;
-            // color: white;
-        }
-
-        .content {
-            display: block;
-            border-color: $dark;
-        }
+  margin-bottom: 10px;
+  &.active {
+    //   rotate icons when it's get active class
+    .icon-group {
+      i {
+        transform: rotate(90deg);
+      }
     }
-
     .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: 1px solid rgba($dark, 0.2);
-        padding: 10px 30px;
-        border-radius: 5px;
-        cursor: pointer;
-
-        .lecture-count {
-            margin-bottom: 0;
-        }
-
-        .icon-group {
-            .text {
-                font-weight: 700;
-            }
-        }
+      border-bottom: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-color: $dark;
     }
 
     .content {
-        padding: 20px 30px;
-        border: 1px solid rgba($dark, 0.2);
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        display: none;
+      display: block;
+      border-color: $dark;
+    }
+  }
 
-        .class {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 5px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba($dark, 0.2);
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
 
-            .count {
-                color: rgba($dark, 0.8);
-            }
-
-            .icon-group {
-                i {
-                    color: rgba($dark, 0.8);
-                }
-
-                .text {
-                    color: rgba($dark, 0.8);
-                    font-weight: 400;
-                }
-            }
-        }
+    .lecture-count {
+      margin-bottom: 0;
     }
 
     .icon-group {
-        display: flex;
-        align-items: center;
+      .text {
+        font-weight: 700;
+      }
+    }
+  }
 
+  .content {
+    padding: 20px 30px;
+    border: 1px solid rgba($dark, 0.2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+
+    .class {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+
+      .count {
+        color: rgba($dark, 0.8);
+      }
+
+      .icon-group {
         i {
-            margin-right: 10px;
+          color: rgba($dark, 0.8);
         }
 
         .text {
-            display: inline-block;
-            margin-bottom: 0;
-            font-weight: 700;
+          color: rgba($dark, 0.8);
+          font-weight: 400;
         }
+      }
+    }
+  }
+
+  .icon-group {
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-right: 10px;
     }
 
-    p {
-        margin-bottom: 0;
+    .text {
+      display: inline-block;
+      margin-bottom: 0;
+      font-weight: 700;
     }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .theme--White {
-    --backgroundColor: #fff;
-    --linkColor: var(--accentColor);
-    --linkHoverColor: #0a2540;
-    --buttonColor: var(--accentColor);
-    --buttonHoverColor: #0a2540;
-    --buttonDisabledColor: #cfd7df;
-    --buttonDisabledOpacity: 0.7;
-    --knockoutColor: #fff;
-    --knockoutDisabledColor: #8898aa;
-    --guideSolidColor: rgba(66, 71, 112, 0.06);
-    --guideDashedColor: rgba(66, 71, 112, 0.09);
-    --titleColor: #0a2540;
-    --textColor: #425466;
-    --inputBackground: #f1f4f7;
-    --inputPlaceholderColor: #acb9c5;
-    --inputTextColor: #0a2540;
-    --annotationColor: #8c9eb1;
-    --maskFadeColor: rgba(0, 0, 0, 0.4);
-    --navColor: #0a2540;
-    --navHoverColor: #0a2540;
-    --navHoverOpacity: 0.6;
-    --footerColor: #0a2540;
-    --cardBorderColor: #cbd6e0;
-    --cardBackground: #fff;
-    --subcardBackground: #f6f9fc;
-    --tableIconColor: #8c9eb1;
-    --stripeAccentWhite: #fff;
-    --stripeAccentLight: #e3e7ec;
-    --stripeAccentDark: #0a2540;
-    --bulletColor: #cfd7df;
-    --footnoteTextColor: #4d5b78;
-    --disclaimerTextColor: #707f98;
+  --backgroundColor: #fff;
+  --linkColor: var(--accentColor);
+  --linkHoverColor: #0a2540;
+  --buttonColor: var(--accentColor);
+  --buttonHoverColor: #0a2540;
+  --buttonDisabledColor: #cfd7df;
+  --buttonDisabledOpacity: 0.7;
+  --knockoutColor: #fff;
+  --knockoutDisabledColor: #8898aa;
+  --guideSolidColor: rgba(66, 71, 112, 0.06);
+  --guideDashedColor: rgba(66, 71, 112, 0.09);
+  --titleColor: #0a2540;
+  --textColor: #425466;
+  --inputBackground: #f1f4f7;
+  --inputPlaceholderColor: #acb9c5;
+  --inputTextColor: #0a2540;
+  --annotationColor: #8c9eb1;
+  --maskFadeColor: rgba(0, 0, 0, 0.4);
+  --navColor: #0a2540;
+  --navHoverColor: #0a2540;
+  --navHoverOpacity: 0.6;
+  --footerColor: #0a2540;
+  --cardBorderColor: #cbd6e0;
+  --cardBackground: #fff;
+  --subcardBackground: #f6f9fc;
+  --tableIconColor: #8c9eb1;
+  --stripeAccentWhite: #fff;
+  --stripeAccentLight: #e3e7ec;
+  --stripeAccentDark: #0a2540;
+  --bulletColor: #cfd7df;
+  --footnoteTextColor: #4d5b78;
+  --disclaimerTextColor: #707f98;
 }
