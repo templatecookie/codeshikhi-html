@@ -652,7 +652,7 @@ section.trainer {
   margin-bottom: 10px;
 }
 
-.toggle.active .icon-group i {
+.toggle.active .icon-group i.down-arrow {
   transform: rotate(90deg);
 }
 

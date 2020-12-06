@@ -70,7 +70,9 @@
     //   rotate icons when it's get active class
     .icon-group {
       i {
-        transform: rotate(90deg);
+        &.down-arrow {
+          transform: rotate(90deg);
+        }
       }
     }
     .header {
