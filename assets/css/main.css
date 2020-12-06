@@ -1242,7 +1242,8 @@ section.trainer {
 }
 
 .platform__logo img {
-  width: 55px;
+  width: 60px;
+  height: 60px;
 }
 
 .platform__list {
