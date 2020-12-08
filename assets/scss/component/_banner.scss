@@ -44,3 +44,11 @@
         }
     }
 }
+
+
+// For extra small device (0 to 399px) 
+@include only_xs {
+    .banner__heading {
+        font-size: 28px;
+    } 
+}

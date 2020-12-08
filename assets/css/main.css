@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -27,7 +28,8 @@ input:focus,
 input {
   border: none;
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 article,
@@ -53,7 +55,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -61,6 +64,13 @@ abbr[title] {
  * Remove the text shadow on text selections (opinionated).
  * 1. Restore the coloring undone by defining the text shadow (opinionated).
  */
+::-moz-selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000000;
+  /* 1 */
+  text-shadow: none;
+}
 
 ::selection {
   background-color: #b3d4fc;
@@ -82,6 +92,7 @@ body {
 
 a, a:hover, a:active, a:focus {
   display: inline-block;
+  -webkit-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
 
@@ -115,8 +126,12 @@ footer {
 }
 
 ul.check-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
 }
 
@@ -166,7 +181,8 @@ ul.check-list li p {
 }
 
 .transform-y50 {
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .icon-box {
@@ -191,11 +207,18 @@ ul.check-list li p {
 }
 
 .btn-primary:hover {
-  box-shadow: 0 5px 10px 0px rgba(65, 71, 66, 0.2);
+  -webkit-box-shadow: 0 5px 10px 0px rgba(65, 71, 66, 0.2);
+          box-shadow: 0 5px 10px 0px rgba(65, 71, 66, 0.2);
 }
 
 /* ====  Responsive Css will be go here ==== */
 /* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .btn {
+    padding: 10px 15px !important;
+  }
+}
+
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
 /* === For Large Device ( 1024px - 1200px) == */
@@ -278,6 +301,12 @@ ul.check-list li p {
   }
 }
 
+@media (max-width: 399px) {
+  .banner__heading {
+    font-size: 28px;
+  }
+}
+
 section.bootcamp .heading-title {
   font-size: 48px;
   font-weight: 800;
@@ -298,7 +327,8 @@ section.bootcamp .heading-title span {
   border-radius: 5px;
   margin-bottom: 50px;
   background-color: white;
-  box-shadow: 0 0 20px rgba(65, 71, 66, 0.1);
+  -webkit-box-shadow: 0 0 20px rgba(65, 71, 66, 0.1);
+          box-shadow: 0 0 20px rgba(65, 71, 66, 0.1);
 }
 
 .bootcamp-block .header {
@@ -306,8 +336,12 @@ section.bootcamp .heading-title span {
 }
 
 .bootcamp-block .header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
 }
 
@@ -346,8 +380,11 @@ section.bootcamp .heading-title span {
 }
 
 .bootcamp-block .body ul.check-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .bootcamp-block .body .check-list {
@@ -366,9 +403,15 @@ section.bootcamp .heading-title span {
 .bootcamp-block .footer {
   border-top: 1px solid #ececec;
   padding: 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bootcamp-block .footer .info h5 {
@@ -384,7 +427,8 @@ section.bootcamp .heading-title span {
 }
 
 .bootcamp-skew__30 {
-  transform: perspective(300px) rotateY(-5deg) translateX(20px);
+  -webkit-transform: perspective(300px) rotateY(-5deg) translateX(20px);
+          transform: perspective(300px) rotateY(-5deg) translateX(20px);
 }
 
 @media (max-width: 1024px) {
@@ -407,16 +451,36 @@ section.bootcamp .heading-title span {
     font-size: 18px;
     line-height: 18px;
   }
+  .bootcamp-block .body .check-list li {
+    width: 100%;
+  }
 }
 
 /* === For Medium Device ( 768px - 1023px) == */
 @media (max-width: 991px) {
   .bootcamp-block.bootcamp-skew__30 {
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
 /* === For Large Device ( 1024px - 1200px) == */
+@media (max-width: 399px) {
+  .bootcamp-block .header, .bootcamp-block .footer, .bootcamp-block .body {
+    padding: 20px;
+  }
+  .bootcamp-block .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .bootcamp-block .footer .info {
+    margin-bottom: 10px;
+  }
+  .bootcamp-block .footer .info, .bootcamp-block .footer a {
+    width: 100%;
+  }
+}
+
 .trainer-title {
   margin-bottom: 60px;
 }
@@ -446,10 +510,12 @@ section.bootcamp .heading-title span {
 }
 
 .trainer-area__image img {
+  -webkit-transition: 0.3s all linear;
   transition: 0.3s all linear;
   height: 310px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .trainer-area__info {
@@ -459,7 +525,8 @@ section.bootcamp .heading-title span {
   margin: -50px 20px 0px;
   z-index: 1;
   background-color: #ffffff;
-  box-shadow: 0px 10px 10px rgba(195, 195, 195, 0.2);
+  -webkit-box-shadow: 0px 10px 10px rgba(195, 195, 195, 0.2);
+          box-shadow: 0px 10px 10px rgba(195, 195, 195, 0.2);
 }
 
 .trainer-area__info h5 {
@@ -475,7 +542,8 @@ section.bootcamp .heading-title span {
 }
 
 .trainer-area:hover .trainer-area__image img {
-  transform: rotate(5deg) scale(1.1);
+  -webkit-transform: rotate(5deg) scale(1.1);
+          transform: rotate(5deg) scale(1.1);
 }
 
 section.trainer {
@@ -570,9 +638,15 @@ section.trainer {
 }
 
 .go__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .go__btns li:nth-child(2) {
@@ -593,7 +667,10 @@ section.trainer {
     width: 100% !important;
   }
   .go__btns {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -603,8 +680,12 @@ section.trainer {
 }
 
 .syllabus #accordion .card-header .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #414742;
 }
 
@@ -613,11 +694,14 @@ section.trainer {
 }
 
 .syllabus #accordion .card-header .btn.collapsed i {
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .syllabus #accordion .card-header .btn i {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   margin-right: 15px;
 }
@@ -639,8 +723,12 @@ section.trainer {
 }
 
 .syllabus #accordion .card__course-syllabus-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 16px 0px;
 }
 
@@ -654,7 +742,8 @@ section.trainer {
 }
 
 .toggle.active .icon-group i.down-arrow {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .toggle.active .header {
@@ -670,9 +759,15 @@ section.trainer {
 }
 
 .toggle .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid rgba(65, 71, 66, 0.2);
   padding: 10px 30px;
   border-radius: 5px;
@@ -696,9 +791,15 @@ section.trainer {
 }
 
 .toggle .content .class {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 5px;
 }
 
@@ -716,8 +817,12 @@ section.trainer {
 }
 
 .toggle .icon-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .toggle .icon-group i {
@@ -732,6 +837,10 @@ section.trainer {
 
 .toggle p {
   margin-bottom: 0;
+}
+
+.toggle .header, .toggle .content {
+  padding: 10px 20px;
 }
 
 .theme--White {
@@ -824,7 +933,8 @@ section.trainer {
 
 @media (min-width: 576px) and (max-width: 767px) {
   .got-question {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background-position: center left;
     background-size: 150px;
   }
@@ -849,9 +959,15 @@ section.trainer {
 
 @media (min-width: 992px) {
   .got-question {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -864,8 +980,12 @@ section.trainer {
 }
 
 .footer__menues {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__menues li {
@@ -885,9 +1005,13 @@ section.trainer {
 }
 
 .footer__social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .footer__social-icon li {
@@ -910,9 +1034,15 @@ section.trainer {
 }
 
 .footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* ====  Responsive Css will be go here ==== */
@@ -945,14 +1075,18 @@ section.trainer {
   width: calc(100% + 200px);
   height: 200px;
   background-color: white;
-  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
   z-index: 1;
 }
 
 @media (max-width: 767px) {
   .footer-content {
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer-content .footer__menues {
     margin-top: 30px;
@@ -999,7 +1133,8 @@ section.trainer {
     width: 100%;
   }
   .bootcamp-block .footer {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .banner__image {
     display: none;
@@ -1008,10 +1143,24 @@ section.trainer {
 
 @media (max-width: 767px) {
   .footer .footer-content {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer-content .footer__social-icon {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-content .footer__menues {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-content .footer__menues li {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
 
@@ -1056,7 +1205,8 @@ section.trainer {
 .subbanner .avatar img {
   width: 30px;
   height: 30px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
 }
 
@@ -1066,6 +1216,7 @@ section.trainer {
 
 .subbanner .link-underline {
   color: #677788;
+  -webkit-transition: .3s !important;
   transition: .3s !important;
   font-weight: 600;
   border-bottom: 1px dotted #677788;
@@ -1111,7 +1262,8 @@ section.trainer {
 .featurescard {
   max-width: 81%;
   border: 0;
-  box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
+  -webkit-box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
+          box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
 }
 
 .featurescard .card-body {
@@ -1193,14 +1345,18 @@ section.trainer {
     max-width: 100%;
   }
   .bootcamp-skew__30 {
-    transform: perspective(0px) rotateY(0deg) translateX(0px);
+    -webkit-transform: perspective(0px) rotateY(0deg) translateX(0px);
+            transform: perspective(0px) rotateY(0deg) translateX(0px);
   }
 }
 
 @media (max-width: 991px) {
   .features .check-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .features .check-list li {
     width: 50%;
@@ -1249,18 +1405,31 @@ section.trainer {
 
 .platform__list {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .platform__logo {
   width: 30%;
   height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid #eee;
   border-right: 1px solid #eee;
 }
@@ -1273,9 +1442,19 @@ section.trainer {
   border-bottom: 0;
 }
 
+.go_icon {
+  color: #62d630;
+}
+
 @media (max-width: 991px) {
   .platform__title {
     text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .features .check-list li {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -158,6 +158,10 @@
   }
 }
 
+.toggle .header, .toggle .content {
+    padding: 10px 20px;
+}
+
 .theme--White {
   --backgroundColor: #fff;
   --linkColor: var(--accentColor);

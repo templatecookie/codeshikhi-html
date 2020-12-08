@@ -65,8 +65,19 @@
   }
 }
 
+.go_icon {
+    color: $primary;
+}
+
 @include mx_medium {
   .platform__title {
     text-align: center;
   }
 }
+
+@include ex_small {
+    .features .check-list li {
+        width: 100%;
+    }
+}
+

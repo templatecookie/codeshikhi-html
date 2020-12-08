@@ -12,6 +12,9 @@
 
 /* === For Small Device ( 0px - 767px) == */
 @include small {
+    .btn {
+        padding: 10px 15px !important;
+    }
 }
 
 /* === For Extra small Device ( 320px - 575px) == */

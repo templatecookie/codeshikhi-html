@@ -109,6 +109,7 @@ section.bootcamp {
     font-size: 40px;
     text-align: center;
   }
+
 }
 
 /* === For Extra small Device ( 320px - 575px) == */
@@ -116,6 +117,9 @@ section.bootcamp {
   .section_title {
     font-size: 18px;
     line-height: 18px;
+  }
+  .bootcamp-block .body .check-list li {
+      width: 100%;
   }
 }
 
@@ -132,3 +136,20 @@ section.bootcamp {
 /* === For Large Device ( 1024px - 1200px) == */
 @include large {
 }
+
+// For extra small device (0 to 399px) 
+@include only_xs {
+    .bootcamp-block .header, .bootcamp-block .footer, .bootcamp-block .body{
+        padding: 20px;
+    }
+    .bootcamp-block .footer {
+        flex-wrap: wrap;
+        .info {
+            margin-bottom: 10px;
+        }
+        .info, a {
+            width: 100%;
+        }
+    }
+}
+
