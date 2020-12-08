@@ -5,7 +5,7 @@ $('.toggle').on('click', function () {
 
 // prevent  inspect
 document.onkeydown = function (e) {
-  if (event.keyCode == 123) {
+  if (e.keyCode == 123) {
     console.log('You cannot inspect Element');
     return false;
   }
