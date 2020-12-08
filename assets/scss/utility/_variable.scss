@@ -1,8 +1,6 @@
 //  Colors variable goes here
-$colors: (
-	primary: #62d630,
-	secondary: #414742,
-);
+$primary: #62d630;
+$dark: #414742;
 
 @function color($color-name) {
 	@return map-get($map: $colors, $key: $color-name);

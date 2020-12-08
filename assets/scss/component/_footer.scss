@@ -1,66 +1,155 @@
 .footer {
-	padding: 30px 0px;
-	.row {
-		align-items: center;
-	}
-	//   logo
-	&__logo {
-		img {
-			max-width: 190px;
-		}
-	}
-	// menues
-	&__menues {
-		display: flex;
-		justify-content: center;
-		li {
-			margin: 0px 16px;
-			a {
-				font-size: 16px;
-				line-height: 24px;
-				color: color(secondary);
-				font-weight: 600;
-				text-transform: capitalize;
-			}
-		}
-	}
-	//   social icons
-	&__social-icon {
-		display: flex;
-		margin-left: auto;
-		justify-content: flex-end;
-		li {
-			margin: 0px 16px;
-			a {
-				i {
-					background-color: #ddd;
-					width: 30px;
-					height: 30px;
-					border-radius: 50%;
-					line-height: 30px;
-					text-align: center;
-					color: rgba(2, 2, 2, 0.438);
-				}
-			}
-		}
-	}
+  padding: 35px 0px;
+  //   logo
+  &__logo {
+    img {
+      max-width: 190px;
+    }
+  }
+  // menues
+  &__menues {
+    display: flex;
+    justify-content: center;
+    li {
+      margin: 0px 16px;
+      a {
+        font-size: 16px;
+        line-height: 24px;
+        color: $dark;
+        font-weight: 600;
+        text-transform: capitalize;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+  //   social icons
+  &__social-icon {
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+    li {
+      margin: 0px 8px;
+      a {
+        background-color: rgba($dark, 0.15);
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 50%;
+        text-align: center;
+        color: $dark;
+        &:hover {
+          color: white;
+          background-color: $primary;
+        }
+      }
+    }
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /* ====  Responsive Css will be go here ==== */
 
-//  for large medium - common
-@media (max-width: 991px) {
-	.footer {
-		padding-bottom: 12px;
-		.row {
-			text-align: center;
-		}
-		// menus
-		&__menues {
-			padding: 12px 0px;
-		}
-		&__social-icon {
-			justify-content: center;
-		}
-	}
+.skew-shape {
+  .footer {
+    padding-top: 250px;
+    &.pt-400 {
+      padding-top: 400px;
+    }
+  }
+
+  position: relative;
+  overflow: hidden;
+  .absolute {
+    position: absolute;
+    width: 100%;
+    z-index: 11;
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    content: '';
+    width: calc(100% + 200px);
+    height: 200px;
+    background-color: white;
+    transform: rotate(5deg);
+    z-index: 1;
+  }
+}
+
+@include small {
+  .footer-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    .footer__menues {
+      margin-top: 30px;
+      width: 100%;
+    }
+    .footer__social-icon {
+      margin-top: 10px;
+    }
+  }
+}
+
+@include small {
+  .homepage-footer.bg-light-gray {
+    background-color: transparent !important;
+  }
+}
+
+@include mx_medium {
+  .homepage-footer {
+    &.bg-light-gray {
+      background-color: transparent !important;
+    }
+    &.skew-shape {
+      overflow: visible;
+      position: unset;
+    }
+    .call-action {
+      position: unset;
+    }
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+  .section.bootcamp .heading-title {
+    text-align: center;
+    font-size: 35px;
+  }
+}
+
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+  section.bootcamp .heading-title {
+    font-size: 36px;
+  }
+  .bootcamp-block .body .check-list li {
+    width: 100%;
+  }
+  .bootcamp-block .footer {
+    flex-wrap: wrap;
+  }
+  .banner__image {
+    display: none;
+  }
+}
+
+@include small {
+  .footer .footer-content {
+    justify-content: center;
+  }
+
+  .footer-content .footer__social-icon {
+    margin-top: 20px;
+  }
 }

@@ -1,7 +1,12 @@
 body {
 	font-family: 'Baloo Da 2', cursive;
 	font-weight: 400;
-	color: color(secondary);
+	color: $dark;
+}
+
+a {
+	display: inline-block;
+	transition: color 0.2s linear;
 }
 
 // custom Padding
@@ -36,7 +41,7 @@ footer {
 //     font-size: 24px;
 //     line-height: 68px;
 //     font-weight: 700;
-//     color: color(primary);
+//     color: $primary;
 //   }
 
 //   &_brief {
@@ -47,10 +52,92 @@ footer {
 // }
 
 .btn-primary {
-	background-color: color(primary) !important;
+	background-color: $primary !important;
+}
+
+.btn-outline-primary{
+	background-color: transparent !important;
+	border: 1px solid $primary !important;
+	color: $primary !important;
+	&:hover{
+		background-color: $primary !important;
+		color: $dark !important;
+	}
 }
 
 .btn {
 	padding: 10px 25px;
 	font-weight: 600;
+}
+
+ul.check-list {
+	li {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		i {
+			font-size: 14px;
+			width: 30px;
+			height: 30px;
+			color: $primary;
+			background: rgba(55, 125, 255, 0.1);
+			background-color: rgba($primary, 0.15);
+			border-radius: 50%;
+			text-align: center;
+			line-height: 30px;
+		}
+		
+		p {
+			color: $dark;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 1.6;
+			margin-left: 18px;
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+.bg-dark {
+	background-color: $dark;
+}
+
+.bg-primary {
+	background-color: darken($primary, 5%) !important;
+}
+
+.bg-gray {
+    background-color: rgb(229, 231, 235) !important;
+}
+
+.bg-light-gray {
+	// background-color: #edefff !important;
+	background-color: #F4F8FB !important;
+}
+
+.text-color {
+    color: rgb(16, 185, 129) !important;
+}
+.bg-color {
+    background-color: rgb(52, 211, 153) !important;
+}
+
+.transform-y50 {
+    transform: translateY(50%);
+}
+
+.icon-box {
+    margin-bottom: 10px;
+    i {
+        font-size: 18px;
+        width: 50px;
+        height: 50px;
+        color: $primary;
+        background: rgba(55, 125, 255, 0.1);
+        background-color: rgba($primary, 0.15);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+    }
 }

@@ -1,5 +1,5 @@
 .go {
-	background-color: color(primary);
+	// background-color: $primary;
 	color: #fff;
 
 	// section -head
@@ -39,7 +39,7 @@
 	&_brief {
 		font-size: 18px;
 		line-height: 32px;
-		color: rgb(187, 187, 187);
+        color: rgba(255, 255, 255, 0.75);
 		font-weight: 500;
 	}
 	//   box-content
@@ -49,20 +49,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		.btn {
-			background-color: #fff !important;
-			color: color(secondary);
-			font-size: 18px;
-			font-weight: 700;
-			transition: background 0.3s linear;
-			&:active {
-				color: color(secondary) !important;
-			}
-			&:hover {
-				background-color: rgb(48, 15, 78) !important;
-				color: #fff !important;
-			}
-		}
 		li {
 			&:nth-child(2) {
 				padding: 0px 18px;

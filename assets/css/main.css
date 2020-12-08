@@ -70,10 +70,19 @@ abbr[title] {
   text-shadow: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Baloo Da 2', cursive;
   font-weight: 400;
   color: #414742;
+}
+
+a, a:hover, a:active, a:focus {
+  display: inline-block;
+  transition: color 0.2s linear;
 }
 
 section {
@@ -89,9 +98,91 @@ footer {
   background-color: #62d630 !important;
 }
 
+.btn-outline-primary {
+  background-color: transparent !important;
+  border: 1px solid #62d630 !important;
+  color: #62d630 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #62d630 !important;
+  color: #414742 !important;
+}
+
 .btn {
   padding: 10px 25px;
   font-weight: 600;
+}
+
+ul.check-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+ul.check-list li i {
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  color: #62d630;
+  background: rgba(55, 125, 255, 0.1);
+  background-color: rgba(98, 214, 48, 0.15);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+
+ul.check-list li p {
+  color: #414742;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-left: 18px;
+  margin-bottom: 0;
+}
+
+.bg-dark {
+  background-color: #414742;
+}
+
+.bg-primary {
+  background-color: #57c527 !important;
+}
+
+.bg-gray {
+  background-color: #e5e7eb !important;
+}
+
+.bg-light-gray {
+  background-color: #F4F8FB !important;
+}
+
+.text-color {
+  color: #10b981 !important;
+}
+
+.bg-color {
+  background-color: #34d399 !important;
+}
+
+.transform-y50 {
+  transform: translateY(50%);
+}
+
+.icon-box {
+  margin-bottom: 10px;
+}
+
+.icon-box i {
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  color: #62d630;
+  background: rgba(55, 125, 255, 0.1);
+  background-color: rgba(98, 214, 48, 0.15);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
 }
 
 .btn-primary {
@@ -100,7 +191,7 @@ footer {
 }
 
 .btn-primary:hover {
-  box-shadow: 0 4px 11px 0px #62d630;
+  box-shadow: 0 5px 10px 0px rgba(65, 71, 66, 0.2);
 }
 
 /* ====  Responsive Css will be go here ==== */
@@ -126,7 +217,6 @@ footer {
   font-size: 16px;
   color: #677788 !important;
   font-weight: 600;
-  transition: color 0.3s linear;
   text-transform: capitalize;
 }
 
@@ -182,59 +272,119 @@ footer {
   font-size: 14px;
 }
 
-.section_title {
+@media (max-width: 767px) {
+  section.banner .banner__image {
+    display: none;
+  }
+}
+
+section.bootcamp .heading-title {
   font-size: 48px;
   font-weight: 800;
   padding-bottom: 60px;
 }
 
-.section_title span {
-  background-color: rgba(98, 214, 48, 0.349);
+section.bootcamp .heading-title span {
+  background-color: rgba(98, 214, 48, 0.15);
   border-radius: 5px;
   padding: 5px 15px;
   text-transform: lowercase;
   color: #62d630;
+  display: inline-block;
 }
 
-.bootcamp__packages {
-  border: 0px;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.356);
+.bootcamp-block {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(65, 71, 66, 0.1);
 }
 
-.bootcamp__top {
+.bootcamp-block .header {
+  padding: 20px 30px;
+}
+
+.bootcamp-block .header .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bootcamp-block .header .title .icon {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background-color: rgba(98, 214, 48, 0.15);
   text-align: center;
+  margin-right: 20px;
+  border-radius: 5px;
 }
 
-.bootcamp_course-title {
-  text-align: left;
-  font-size: 26px;
+.bootcamp-block .header .title p {
+  font-size: 24px;
+  margin-bottom: 0;
+  color: #414742;
+  font-weight: bolder;
+}
+
+.bootcamp-block .header p {
+  color: #414742;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.bootcamp-block .body {
+  border-top: 1px solid #ececec;
+  padding: 20px 30px;
+}
+
+.bootcamp-block .body .headline {
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.bootcamp-block .body ul.check-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bootcamp-block .body .check-list {
+  margin-bottom: 0;
+}
+
+.bootcamp-block .body .check-list li {
+  width: 50%;
+}
+
+.bootcamp-block .body .check-list li p {
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
 
-.bootcamp__begin-date-info h2 {
-  font-size: 18px;
-  font-weight: 800;
-  text-transform: capitalize;
-  padding-bottom: 30px;
+.bootcamp-block .footer {
+  border-top: 1px solid #ececec;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.bootcamp__begin-date-info h2 .time {
-  background-color: #62d630;
-  color: #fff;
-  padding: 8px;
-  font-size: 12px;
+.bootcamp-block .footer .info h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #414742;
 }
 
-.bootcamp__begin-date-info h2 .bootcamp_begin {
-  background-color: #f39233;
-  color: #fff;
-  padding: 8px;
-  font-size: 12px;
+.bootcamp-block .footer .info p {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: rgab(#414742, 0.5);
 }
 
-.bootcamp__bottom {
-  border-top: 2px solid #62d630;
-  padding-top: 16px;
+.bootcamp-skew__30 {
+  transform: perspective(300px) rotateY(-5deg) translateX(20px);
 }
 
 @media (max-width: 1024px) {
@@ -245,9 +395,9 @@ footer {
 
 /* === For Small Device ( 0px - 767px) == */
 @media (max-width: 767px) {
-  .section_title {
-    font-size: 26px;
-    line-height: 26px;
+  section.bootcamp .heading-title {
+    font-size: 40px;
+    text-align: center;
   }
 }
 
@@ -260,6 +410,12 @@ footer {
 }
 
 /* === For Medium Device ( 768px - 1023px) == */
+@media (max-width: 991px) {
+  .bootcamp-block.bootcamp-skew__30 {
+    transform: none;
+  }
+}
+
 /* === For Large Device ( 1024px - 1200px) == */
 .trainer-title {
   margin-bottom: 60px;
@@ -291,6 +447,9 @@ footer {
 
 .trainer-area__image img {
   transition: 0.3s all linear;
+  height: 310px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .trainer-area__info {
@@ -319,6 +478,10 @@ footer {
   transform: rotate(5deg) scale(1.1);
 }
 
+section.trainer {
+  padding-bottom: 120px;
+}
+
 /* === For Small Device ( 0px - 767px) == */
 @media (max-width: 767px) {
   .trainer-area {
@@ -328,7 +491,6 @@ footer {
 
 .call-to-action {
   padding: 35px 0px 35px 25px;
-  background-color: #62d630;
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -359,7 +521,6 @@ footer {
 /* === For Medium Device ( 768px - 1023px) == */
 /* === For Large Device ( 1024px - 1200px) == */
 .go {
-  background-color: #62d630;
   color: #fff;
 }
 
@@ -404,7 +565,7 @@ footer {
 .go_brief {
   font-size: 18px;
   line-height: 32px;
-  color: #bbbbbb;
+  color: rgba(255, 255, 255, 0.75);
   font-weight: 500;
 }
 
@@ -412,23 +573,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.go__btns .btn {
-  background-color: #fff !important;
-  color: #414742;
-  font-size: 18px;
-  font-weight: 700;
-  transition: background 0.3s linear;
-}
-
-.go__btns .btn:active {
-  color: #414742 !important;
-}
-
-.go__btns .btn:hover {
-  background-color: #300f4e !important;
-  color: #fff !important;
 }
 
 .go__btns li:nth-child(2) {
@@ -505,6 +649,126 @@ footer {
   font-weight: 400;
 }
 
+.toggle {
+  margin-bottom: 10px;
+}
+
+.toggle.active .icon-group i.down-arrow {
+  transform: rotate(90deg);
+}
+
+.toggle.active .header {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-color: #414742;
+}
+
+.toggle.active .content {
+  display: block;
+  border-color: #414742;
+}
+
+.toggle .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(65, 71, 66, 0.2);
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle .header .lecture-count {
+  margin-bottom: 0;
+}
+
+.toggle .header .icon-group .text {
+  font-weight: 700;
+}
+
+.toggle .content {
+  padding: 20px 30px;
+  border: 1px solid rgba(65, 71, 66, 0.2);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+}
+
+.toggle .content .class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.toggle .content .class .count {
+  color: rgba(65, 71, 66, 0.8);
+}
+
+.toggle .content .class .icon-group i {
+  color: rgba(65, 71, 66, 0.8);
+}
+
+.toggle .content .class .icon-group .text {
+  color: rgba(65, 71, 66, 0.8);
+  font-weight: 400;
+}
+
+.toggle .icon-group {
+  display: flex;
+  align-items: center;
+}
+
+.toggle .icon-group i {
+  margin-right: 10px;
+}
+
+.toggle .icon-group .text {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.toggle p {
+  margin-bottom: 0;
+}
+
+.theme--White {
+  --backgroundColor: #fff;
+  --linkColor: var(--accentColor);
+  --linkHoverColor: #0a2540;
+  --buttonColor: var(--accentColor);
+  --buttonHoverColor: #0a2540;
+  --buttonDisabledColor: #cfd7df;
+  --buttonDisabledOpacity: 0.7;
+  --knockoutColor: #fff;
+  --knockoutDisabledColor: #8898aa;
+  --guideSolidColor: rgba(66, 71, 112, 0.06);
+  --guideDashedColor: rgba(66, 71, 112, 0.09);
+  --titleColor: #0a2540;
+  --textColor: #425466;
+  --inputBackground: #f1f4f7;
+  --inputPlaceholderColor: #acb9c5;
+  --inputTextColor: #0a2540;
+  --annotationColor: #8c9eb1;
+  --maskFadeColor: rgba(0, 0, 0, 0.4);
+  --navColor: #0a2540;
+  --navHoverColor: #0a2540;
+  --navHoverOpacity: 0.6;
+  --footerColor: #0a2540;
+  --cardBorderColor: #cbd6e0;
+  --cardBackground: #fff;
+  --subcardBackground: #f6f9fc;
+  --tableIconColor: #8c9eb1;
+  --stripeAccentWhite: #fff;
+  --stripeAccentLight: #e3e7ec;
+  --stripeAccentDark: #0a2540;
+  --bulletColor: #cfd7df;
+  --footnoteTextColor: #4d5b78;
+  --disclaimerTextColor: #707f98;
+}
+
 .faq-area__text {
   margin-bottom: 55px;
 }
@@ -526,8 +790,9 @@ footer {
 .got-question {
   background-color: #62d630;
   padding: 30px;
+  padding-left: 250px;
   border-radius: 5px;
-  background-image: url(../images/shape/004-comments.svg);
+  background-image: url(../images/comments.svg);
   background-position: 3%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -535,7 +800,6 @@ footer {
 
 .got-question__info {
   color: #ffffff;
-  padding-left: 250px;
 }
 
 .got-question__info h5 {
@@ -546,28 +810,26 @@ footer {
 
 .got-question__info p {
   font-size: 16px;
-  color: #bbbbbb;
+  color: rgba(255, 255, 255, 0.75);
   margin-bottom: 0px;
-  white-space: nowrap;
   padding: 8px 0px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .got-question__info {
+  .got-question {
     padding-left: 118px;
+    text-align: right;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .got-question {
     flex-wrap: wrap;
-    background-position: top left;
+    background-position: center left;
     background-size: 150px;
   }
-  .got-question__info {
-    padding-left: 0px;
-    padding-top: 115px;
-    margin: 0px auto 20px;
+  .got-question {
+    padding-left: 150px;
   }
   .got-question .btn {
     margin: 0 auto;
@@ -576,34 +838,25 @@ footer {
 
 @media (max-width: 575px) {
   .got-question {
-    flex-wrap: wrap;
-    background-position: top left;
-    background-size: 150px;
+    background-image: none;
+    padding: 30px;
+    text-align: center;
   }
   .got-question__info {
-    padding-left: 0px;
-    padding-top: 130px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
-  .got-question .btn {
-    margin: 0 auto;
-  }
-  .got-question__info h5 {
-    text-align: center;
-  }
-  .got-question__info p {
-    white-space: normal;
-    text-align: center;
-    margin-top: 15px;
+}
+
+@media (min-width: 992px) {
+  .got-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 .footer {
-  padding: 30px 0px;
-}
-
-.footer .row {
-  align-items: center;
+  padding: 35px 0px;
 }
 
 .footer__logo img {
@@ -627,6 +880,10 @@ footer {
   text-transform: capitalize;
 }
 
+.footer__menues li a:hover {
+  color: #62d630;
+}
+
 .footer__social-icon {
   display: flex;
   margin-left: auto;
@@ -634,32 +891,127 @@ footer {
 }
 
 .footer__social-icon li {
-  margin: 0px 16px;
+  margin: 0px 8px;
 }
 
-.footer__social-icon li a i {
-  background-color: #ddd;
-  width: 30px;
-  height: 30px;
+.footer__social-icon li a {
+  background-color: rgba(65, 71, 66, 0.15);
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
   border-radius: 50%;
-  line-height: 30px;
   text-align: center;
-  color: rgba(2, 2, 2, 0.438);
+  color: #414742;
+}
+
+.footer__social-icon li a:hover {
+  color: white;
+  background-color: #62d630;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ====  Responsive Css will be go here ==== */
-@media (max-width: 991px) {
-  .footer {
-    padding-bottom: 12px;
-  }
-  .footer .row {
-    text-align: center;
-  }
-  .footer__menues {
-    padding: 12px 0px;
-  }
-  .footer__social-icon {
+.skew-shape {
+  position: relative;
+  overflow: hidden;
+}
+
+.skew-shape .footer {
+  padding-top: 250px;
+}
+
+.skew-shape .footer.pt-400 {
+  padding-top: 400px;
+}
+
+.skew-shape .absolute {
+  position: absolute;
+  width: 100%;
+  z-index: 11;
+  top: 0;
+  left: 0;
+}
+
+.skew-shape::after {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  content: '';
+  width: calc(100% + 200px);
+  height: 200px;
+  background-color: white;
+  transform: rotate(5deg);
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .footer-content {
+    flex-wrap: wrap;
     justify-content: center;
+  }
+  .footer-content .footer__menues {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .footer-content .footer__social-icon {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .homepage-footer.bg-light-gray {
+    background-color: transparent !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .homepage-footer.bg-light-gray {
+    background-color: transparent !important;
+  }
+  .homepage-footer.skew-shape {
+    overflow: visible;
+    position: unset;
+  }
+  .homepage-footer .call-action {
+    position: unset;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+@media (min-width: 320px) and (max-width: 575px) {
+  .section.bootcamp .heading-title {
+    text-align: center;
+    font-size: 35px;
+  }
+}
+
+/* === For Medium Device ( 768px - 1023px) == */
+@media (min-width: 768px) and (max-width: 991px) {
+  section.bootcamp .heading-title {
+    font-size: 36px;
+  }
+  .bootcamp-block .body .check-list li {
+    width: 100%;
+  }
+  .bootcamp-block .footer {
+    flex-wrap: wrap;
+  }
+  .banner__image {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .footer-content {
+    justify-content: center;
+  }
+  .footer-content .footer__social-icon {
+    margin-top: 20px;
   }
 }
 
@@ -670,20 +1022,6 @@ footer {
   position: relative;
   z-index: 1;
   padding: 64px 0;
-}
-
-.subbanner::before {
-  background: #fff;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  content: "";
-  opacity: 0.9;
 }
 
 .subbanner .btn-pill {
@@ -739,10 +1077,10 @@ footer {
 }
 
 /* ====  Responsive Css will be go here ==== */
+/* === For Large Device ( 1024px - 1200px) == */
+/* === For Medium Device ( 768px - 1023px) == */
 /* === For Small Device ( 0px - 767px) == */
 /* === For Extra small Device ( 320px - 575px) == */
-/* === For Medium Device ( 768px - 1023px) == */
-/* === For Large Device ( 1024px - 1200px) == */
 .w-80 {
   width: 80%;
   margin: 0 auto;
@@ -764,40 +1102,6 @@ footer {
   font-weight: 700;
   line-height: 1.4;
   color: #414742;
-}
-
-.features__media {
-  display: flex;
-  align-items: center;
-  margin-bottom: 32px;
-}
-
-.features__media span {
-  font-size: 14px;
-  width: 30px;
-  height: 30px;
-  color: #377dff;
-  background: rgba(55, 125, 255, 0.1);
-  border-radius: 50%;
-  text-align: center;
-  line-height: 30px;
-}
-
-.features__media div {
-  color: #414742;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.6;
-  margin-left: 18px;
-}
-
-.features__media .link {
-  color: #377dff;
-  cursor: pointer;
-}
-
-.features__media .link:hover {
-  color: #4e7fdb;
 }
 
 .padding {
@@ -878,12 +1182,28 @@ footer {
 }
 
 /* === For Medium Device ( 768px - 1023px) == */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .padding {
     padding: 0;
   }
   .features__section {
     max-width: 100%;
+  }
+  .featurescard {
+    max-width: 100%;
+  }
+  .bootcamp-skew__30 {
+    transform: perspective(0px) rotateY(0deg) translateX(0px);
+  }
+}
+
+@media (max-width: 991px) {
+  .features .check-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features .check-list li {
+    width: 50%;
   }
 }
 
@@ -910,14 +1230,11 @@ footer {
 
 .platform__title span {
   font-size: 14px;
-  color: #1724b5;
+  color: #62d630;
   letter-spacing: 2px;
 }
 
 .platform__title h3 {
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.6;
   color: #414742;
 }
 
@@ -926,7 +1243,8 @@ footer {
 }
 
 .platform__logo img {
-  width: 55px;
+  width: 60px;
+  height: 60px;
 }
 
 .platform__list {
@@ -955,9 +1273,9 @@ footer {
   border-bottom: 0;
 }
 
-/* ====  Responsive Css will be go here ==== */
-/* === For Small Device ( 0px - 767px) == */
-/* === For Extra small Device ( 320px - 575px) == */
-/* === For Medium Device ( 768px - 1023px) == */
-/* === For Large Device ( 1024px - 1200px) == */
+@media (max-width: 991px) {
+  .platform__title {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=main.css.map */

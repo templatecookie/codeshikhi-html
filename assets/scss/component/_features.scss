@@ -18,41 +18,7 @@
         h2 {
             font-weight: 700;
             line-height: 1.4;
-            color: color(secondary);
-        }
-    }
-
-    &__media {
-        display: flex;
-        align-items: center;
-        margin-bottom: 32px;
-
-        span {
-            font-size: 14px;
-            width: 30px;
-            height: 30px;
-            color: #377dff;
-            background: rgba(55, 125, 255, 0.1);
-            border-radius: 50%;
-            text-align: center;
-            line-height: 30px;
-        }
-
-        div {
-            color: color(secondary);
-            font-size: 1rem;
-            font-weight: 600;
-            line-height: 1.6;
-            margin-left: 18px;
-        }
-
-        .link {
-            color: #377dff;
-            cursor: pointer;
-
-            &:hover {
-                color: #4e7fdb;
-            }
+            color: $dark;
         }
     }
 }
@@ -139,9 +105,28 @@
     .padding{
         padding: 0;
     }
+    
     .features__section{
         max-width: 100%;
     }
+
+    .featurescard {
+        max-width: 100%;
+    }
+        
+    .bootcamp-skew__30 {
+        transform: perspective(0px) rotateY(0deg) translateX(0px);
+    }
+}
+
+@include mx_medium {
+    .features .check-list {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: 50%;
+        }
+    } 
 }
 
 /* === For Large Device ( 1024px - 1200px) == */

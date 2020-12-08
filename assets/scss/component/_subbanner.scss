@@ -6,19 +6,19 @@
     z-index: 1;
     padding: 64px 0;
 
-    &::before {
-        background: #fff;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        content: "";
-        opacity: 0.9;
-    }
+    // &::before {
+    //     background: #fff;
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     z-index: -1;
+    //     width: 100%;
+    //     height: 100%;
+    //     content: "";
+    //     opacity: 0.9;
+    // }
 
     .btn-pill {
         padding: 5px 14px;
@@ -39,7 +39,7 @@
 
     &__header {
         font-weight: 700;
-        color: color(secondary);
+        color: $dark;
         line-height: 1.2;
     }
 
@@ -79,14 +79,20 @@
 
 /* ====  Responsive Css will be go here ==== */
 
-/* === For Small Device ( 0px - 767px) == */
-@include small {}
-
-/* === For Extra small Device ( 320px - 575px) == */
-@include ex_small {}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {}
 
 /* === For Medium Device ( 768px - 1023px) == */
 @include medium {}
 
-/* === For Large Device ( 1024px - 1200px) == */
-@include large {}
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+    
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+    
+}
+
+
