@@ -613,7 +613,7 @@ section.trainer {
   font-weight: 600;
   width: 50%;
   margin: auto;
-  color: #bbbbbb;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .go__box-content {
