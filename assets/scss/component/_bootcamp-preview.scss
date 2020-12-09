@@ -1,0 +1,43 @@
+.bootcamp-preview {
+    overflow: hidden;
+    border-radius: 5px;
+    // background-color: $dark;
+    box-shadow: 0 0 20px rgba(65, 71, 66, 0.1);
+    max-width: 500px;
+    background: white;
+    .image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .info {
+        padding: 20px;
+        .price {
+            font-size: 55px;
+            font-weight: bold;
+            // color: $primary;
+            margin-bottom: 0;
+            color: $dark;
+        }
+        .students-count{
+            i,svg {
+                color: rgba($dark, 0.8);
+                font-size: 16px;
+                margin-right: 5px;
+            }
+        }
+        a {
+            padding: 10px 50px;
+        }
+        .start-date {
+            background-color: $primary;
+            margin: 30px 0;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: $dark;
+        }   
+    }
+}
