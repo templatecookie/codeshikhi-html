@@ -15,9 +15,9 @@ Check the [Live Demo here](https://codeshikhi-html.netlify.app/).
 
 
 ## Framework & Technologies
-- tailwind
+- bootstrap
 - jQuery
-
+- scss
 ## Credits
 - Design & Developed by [Templatecookie](https://templatecookie.com)
 
