@@ -11,18 +11,8 @@ Check the [Live Demo here](https://codeshikhi-html.netlify.app/).
 
 ## Pages List
 - Home (Landing Page)
-- Shop (Product Page)
-- Product Details
-- About
-- Account Setting
-- Sign In
-- Sign Up
-- Forget Password
-- Change Password
-- 404
-- Checkout
-- Cart
-- Wishlist
+- Course Details
+
 
 ## Framework & Technologies
 - tailwind
