@@ -3,7 +3,7 @@ Templatecookie.com creates quality templates and php scripts. Templatecookie has
 
 # [Codshikhi - eLearning HTML Template](https://www.templatecookie.com/products)
 
-> Codeshikhi is an eLearning HTML Template. Where you find two courses as a demo.
+> Codeshikhi is an eLearning HTML Template with two courses and a course list on the landing page and also an instructor section has there. 
 
 Check the [Live Demo here](https://codeshikhi-html.netlify.app/).
 
